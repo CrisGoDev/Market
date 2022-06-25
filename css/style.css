@@ -44,6 +44,17 @@
 .masonry-wrapper .grid-item .grid-item__inner, .setting .grid-item .grid-item__inner {
   position: relative;
 }
+*{
+  --color-principal:#677180;
+}
+
+.logo-santini img{
+  border-radius: 50%;
+  width: 4vw;
+}
+.main-color{
+  background-color: var(--color-principal);
+}
 
 .masonry-wrapper.ac_masonry-grid .grid-item__content-wrapper, .setting.ac_masonry-grid .grid-item__content-wrapper {
   position: absolute;
@@ -17424,4 +17435,6 @@ ul.timeline > li.process:before {
 
 }
 
-
+.main-color{
+  background-color: var(--color-principal);
+}
