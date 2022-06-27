@@ -750,3 +750,217 @@
     })
 
 })(jQuery);
+
+
+    function aumentarWeb(dataNombre){
+        const $contenedorMedicamentosCarrito=document.querySelectorAll(".medicamentoCarritoWeb");
+        const $medicamentosIncremento=document.querySelectorAll(".nombreMedicamentoCarritoWeb");
+        const $medicamentoCantidad=document.querySelectorAll(".nombreMedicamentoCarritoWeb + small > strong");
+        const $medicamentoPrecio=document.querySelectorAll(".nombreMedicamentoCarritoWeb + small > span");
+        const $totalCarritoWeb=document.querySelector(".carritoFooterWeb h3 strong span strong");        
+        let cantidad=0,total=0,precio;
+        for(let k=0;k<$medicamentosIncremento.length;k++){
+            if($medicamentosIncremento[k].dataset.nombre==dataNombre){
+                if($contenedorMedicamentosCarrito[k].classList.contains("none")){
+                    $contenedorMedicamentosCarrito[k].classList.remove("none");
+                }
+                cantidad=$medicamentoCantidad[k].textContent;
+                total=$totalCarritoWeb.textContent;                
+                precio=$medicamentoPrecio[k].textContent;
+
+                
+                cantidad++;
+                $medicamentoCantidad[k].textContent=cantidad;
+                total=Math.abs(total)+Math.abs(precio);
+                
+                $totalCarritoWeb.textContent=total.toFixed(2);
+                
+            }
+        }
+
+    }
+
+    function disminuirWeb(dataNombre,num){
+        const $medicamentosIncremento=document.querySelectorAll(".nombreMedicamentoCarritoWeb");
+        const $medicamentoCantidad=document.querySelectorAll(".nombreMedicamentoCarritoWeb + small > strong");
+        const $medicamentoPrecio=document.querySelectorAll(".nombreMedicamentoCarritoWeb + small > span");
+        const $totalCarritoWeb=document.querySelector(".carritoFooterWeb h3 strong span strong");  
+        const $contenedoresCarritosWeb=document.querySelectorAll(".medicamentoCarritoWeb");
+        let cantidad=0,total=0,precio;
+        for(let k=0;k<$medicamentosIncremento.length;k++){
+            if($medicamentosIncremento[k].dataset.nombre==dataNombre){
+                cantidad=$medicamentoCantidad[k].textContent;
+                total=$totalCarritoWeb.textContent;                
+                precio=$medicamentoPrecio[k].textContent;
+                
+                if(cantidad!=0){
+                    cantidad=Math.abs(cantidad)-Math.abs(num);               
+                    $medicamentoCantidad[k].textContent=cantidad;
+                    total=Math.abs(total)-Math.abs(precio)*Math.abs(num);                    
+                    $totalCarritoWeb.textContent=total.toFixed(2);   
+                    if(cantidad==0){
+                        $contenedoresCarritosWeb[k].classList.add("none");
+                    }                                     
+                }               
+            }
+        }
+
+    }
+    
+    const $medicamentosWeb=document.querySelectorAll(".ps-product__title");
+
+    function eventosCarritos($contenedor, pocision,e){
+        const $medicamentosCarritoWeb=document.querySelectorAll(".nombreMedicamentoCarritoWeb");  
+        
+        let existe=false;
+        for(let k=0;k<$medicamentosCarritoWeb.length;k++){
+            if($contenedor[pocision].dataset.nombre==$medicamentosCarritoWeb[k].dataset.nombre){                    
+                existe=true;
+                //Inicio de los eventos de suma                
+                
+                if(e.target.getAttribute("alt")=="Icono de Suma"){
+                    aumentarWeb($contenedor[pocision].dataset.nombre);                                
+                }else if(e.target.getAttribute("alt")=="Icono de Resta"){//Fin de los eventos de suma e inicio de resta
+                    disminuirWeb($contenedor[pocision].dataset.nombre,1);
+                }else if(e.target.getAttribute("alt")=="Icono de Basurera"){//Fin de los eventos de resta e inicio de basura
+                    const $medicamentoCantidad=document.querySelectorAll(".nombreMedicamentoCarritoWeb + small > strong");                    
+                    const $medicamentosEliminar=document.querySelectorAll(".nombreMedicamentoCarritoWeb");
+                    let num=0;
+                    for(let z=0;z<$medicamentosEliminar.length;z++){
+                        if($medicamentosEliminar[z].dataset.nombre==$contenedor[pocision].dataset.nombre){
+                            num=$medicamentoCantidad[z].textContent;
+                        }
+                    }
+                    disminuirWeb($contenedor[pocision].dataset.nombre,Math.abs(num));                   
+
+                }             
+                
+            }        
+    }
+
+    if(!existe && e.target==$contenedor[pocision].childNodes[1] 
+        && $contenedor[pocision].classList.contains("iconosDelCarritoConteiner")){
+        
+        const direccionImagen=document.querySelectorAll(".ps-product.ps-product--simple div a img")[pocision].getAttribute("src");
+        const nombreMedicamento=document.querySelectorAll(".ps-product.ps-product--simple div:nth-of-type(2) div a")[pocision].textContent;
+        const precioMedicamento=document.querySelectorAll(".ps-product__price span")[pocision].innerHTML;
+        const $CARRITO=document.querySelector(".carritoWeb");
+        const $elemetoCarrito=document.createElement("div");
+        $elemetoCarrito.classList.add("ps-product--cart-mobile");
+        $elemetoCarrito.classList.add("medicamentoCarritoWeb");
+        $elemetoCarrito.innerHTML=`
+        <div class="ps-product__thumbnail">
+            <a href="#">
+                
+                <img src="${direccionImagen}" alt="">
+            </a>
+        </div>
+    
+        <div class="ps-product__content">
+            <a class="ps-product__remove" href="#">
+                <i class="icon-cross"></i>
+            </a>
+            <a class="nombreMedicamentoCarritoWeb" data-nombre="${$medicamentosWeb[pocision].dataset.nombre}" href="#">${nombreMedicamento}</a>                                            
+            <small><strong>0</strong> x $<span>${precioMedicamento}</span></small>
+            <div class="iconosDelCarritoConteinerVenta" data-nombre="${$medicamentosWeb[pocision].dataset.nombre}">
+                <img src="./img-santini/icons/iconoSuma.svg" alt="Icono de Suma">
+                <img src="./img-santini/icons/iconoRestar.svg" alt="Icono de Resta">
+                <img src="./img-santini/icons/iconoBasurera.svg" alt="Icono de Basurera">
+            </div>
+        </div>`;
+        $CARRITO.appendChild($elemetoCarrito);
+
+
+
+        const $medicamentosCarritoWebEventoCompras=document.querySelectorAll(".iconosDelCarritoConteinerVenta");
+
+    for(let y=0;y<$medicamentosCarritoWebEventoCompras.length;y++){
+        $medicamentosCarritoWebEventoCompras[y].addEventListener("click",(e)=>{                   
+        eventosCarritos($medicamentosCarritoWebEventoCompras, y,e);
+        })            
+    }
+        aumentarWeb($medicamentosWeb[pocision].dataset.nombre);     
+        
+        //Esta es una de las partes de categoria
+    }else if(!existe && e.target==$contenedor[pocision].childNodes[3] 
+        && $contenedor[pocision].classList.contains("iconosDelCarritoConteinerVentaCategorias")){
+
+            console.log("Si entras");
+            const direccionImagen=document.querySelectorAll(".categoriaMejor div a img")[pocision].getAttribute("src");
+            const nombreMedicamento=document.querySelectorAll(".categoriaMejor div:nth-of-type(2) div:nth-of-type(1) a")[pocision].textContent;
+            const precioMedicamento=document.querySelectorAll(".categoriaMejor div:nth-of-type(2) div:nth-of-type(1) p span")[pocision].innerHTML;
+            const $CARRITO=document.querySelector(".carritoWeb");
+            const $elemetoCarrito=document.createElement("div");
+            $elemetoCarrito.classList.add("ps-product--cart-mobile");
+            $elemetoCarrito.classList.add("medicamentoCarritoWeb");
+            $elemetoCarrito.innerHTML=`
+            <div class="ps-product__thumbnail">
+                <a href="#">
+                    
+                    <img src="${direccionImagen}" alt="">
+                </a>
+            </div>
+        
+            <div class="ps-product__content">
+                <a class="ps-product__remove" href="#">
+                    <i class="icon-cross"></i>
+                </a>
+                <a class="nombreMedicamentoCarritoWeb" data-nombre="${$contenedor[pocision].dataset.nombre}" href="#">${nombreMedicamento}</a>                                            
+                <small><strong>0</strong> x $<span>${precioMedicamento}</span></small>
+                <div class="iconosDelCarritoConteinerVenta" data-nombre="${$contenedor[pocision].dataset.nombre}">
+                    <img src="./img-santini/icons/iconoSuma.svg" alt="Icono de Suma">
+                    <img src="./img-santini/icons/iconoRestar.svg" alt="Icono de Resta">
+                    <img src="./img-santini/icons/iconoBasurera.svg" alt="Icono de Basurera">
+                </div>
+            </div>`;
+            $CARRITO.appendChild($elemetoCarrito);
+    
+            const $medicamentosCarritoWebEventoCompras=document.querySelectorAll(".iconosDelCarritoConteinerVenta");
+
+            for(let y=0;y<$medicamentosCarritoWebEventoCompras.length;y++){
+                $medicamentosCarritoWebEventoCompras[y].addEventListener("click",(e)=>{                   
+                eventosCarritos($medicamentosCarritoWebEventoCompras, y,e);
+                })            
+            }
+    
+         
+            aumentarWeb($contenedor[pocision].dataset.nombre);     
+//Fin de la parte uno de categorias
+
+
+    }
+    }
+
+
+        const $medicamentosCarritoWebEvento=document.querySelectorAll(".iconosDelCarritoConteiner");
+    
+        if($medicamentosCarritoWebEvento.length>0){
+            for(let y=0;y<$medicamentosWeb.length;y++){
+                $medicamentosCarritoWebEvento[y].addEventListener("click",(e)=>{                   
+                eventosCarritos($medicamentosCarritoWebEvento, y,e);
+                })            
+            }
+        }
+        
+    
+        const $medicamentosCarritoWebEventoCompras=document.querySelectorAll(".iconosDelCarritoConteinerVenta");
+    
+        for(let y=0;y<$medicamentosCarritoWebEventoCompras.length;y++){
+            $medicamentosCarritoWebEventoCompras[y].addEventListener("click",(e)=>{                   
+            eventosCarritos($medicamentosCarritoWebEventoCompras, y,e);
+            })            
+        }
+    
+        
+
+        
+            const $categoriaMejoresContenedor=document.querySelectorAll(".iconosDelCarritoConteinerVentaCategorias");
+            for(let y=0;y<$categoriaMejoresContenedor.length;y++){
+                $categoriaMejoresContenedor[y].addEventListener("click",(e)=>{                   
+                eventosCarritos($categoriaMejoresContenedor, y,e);
+                })            
+            }
+        
+
+
+
