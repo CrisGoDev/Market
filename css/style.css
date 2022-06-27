@@ -8212,7 +8212,7 @@ textarea.form-control {
   --max-lines: 2;
   max-height: calc(1.2em * var(--max-lines));
   overflow: hidden;
-  padding-right: 1rem;
+  padding-right: 1rem;  
 }
 
 .ps-product .ps-product__title:hover {
@@ -17447,4 +17447,71 @@ ul.timeline > li.process:before {
 
 .main-color{
   background-color: var(--color-principal);
+}
+
+.iconosDelCarritoConteiner{
+  display: flex;  
+  flex-direction: row; 
+  align-items: flex-end;  
+}
+
+.iconosDelCarritoConteiner img:nth-of-type(1){
+  width: 24px;
+  margin-left: 1rem;
+}
+
+.iconosDelCarritoConteiner img:nth-of-type(2),
+.iconosDelCarritoConteiner img:nth-of-type(3){
+  width: 20px;
+  margin-left: 1rem;
+}
+
+.iconosDelCarritoConteinerVenta{
+  display: flex;  
+  flex-direction: row; 
+  align-items: flex-end;  
+}
+
+.iconosDelCarritoConteinerVenta img:nth-of-type(1){
+  width: 24px;
+  margin-left: 1rem;
+}
+
+.iconosDelCarritoConteinerVenta img:nth-of-type(2),
+.iconosDelCarritoConteinerVenta img:nth-of-type(3){
+  width: 20px;
+  margin-left: 1rem;
+}
+.iconosDelCarritoConteinerVenta img:hover,.iconosDelCarritoConteiner img:hover {
+  background-color: #0077B5;
+  border-radius: 5px;
+}
+
+.nombreMedicamentoCarritoWeb{
+  display: block;
+}
+
+.none{
+  display: none;
+}
+
+.iconosDelCarritoConteinerVentaCategorias{
+  display: flex;  
+  flex-direction: row; 
+  align-items: flex-end;  
+}
+
+.iconosDelCarritoConteinerVentaCategorias img:nth-of-type(1){
+  width: 24px;
+  margin-left: 1rem;
+}
+
+.iconosDelCarritoConteinerVentaCategorias img:nth-of-type(2),
+.iconosDelCarritoConteinerVentaCategorias img:nth-of-type(3){
+  width: 20px;
+  margin-left: 1rem;
+}
+.iconosDelCarritoConteinerVentaCategorias img:hover,.iconosDelCarritoConteiner img:hover {
+  background-color: #0077B5;
+  border-radius: 5px;
 }
