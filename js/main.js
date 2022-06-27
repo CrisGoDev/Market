@@ -134,6 +134,26 @@
 
             });
         }
+
+        $('.ps-product__title').on('click', function(e) {
+            e.preventDefault();
+            // document.getElementById("main-all").style.display = "none";
+            // document.getElementById("product-specific").style.display = "initial";
+            // $('#main-all').addClass("hide");
+            // $('#product-specific').removeClass("hide");
+            // var current = $(this).closest('.mega-menu__column')
+            // $(this).toggleClass('active');
+            // current.siblings().find('.sub-toggle').removeClass('active');
+            // current.children('.mega-menu__list').slideToggle(350);
+            // current.siblings().find('.mega-menu__list').slideUp(350);
+        });
+
+        // $('#showAll').on('click', function(e) {
+        //     e.preventDefault();
+        //     $('#main-all').removeClass("hide");
+        //     $('#product-specific').addClass("hide");
+        // });
+
     }
 
     function stickyHeader() {

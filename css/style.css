@@ -14805,6 +14805,9 @@ textarea.form-control {
 .ps-page--product {
   padding-top: 30px;
 }
+.hide{
+  display: none;
+}
 
 .ps-page--product .ps-page__container {
   display: -webkit-box;
