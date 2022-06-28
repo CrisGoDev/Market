@@ -99,8 +99,81 @@
     function editProd(){
         $('#editarProducto').on('click', function(e) {
             e.preventDefault();
-            alert('clickeaste')
             $('#price_prod').removeAttr("disabled");
+            $('#name_prod').removeAttr("disabled");
+            $('#categ_prod').removeAttr("disabled");
+            $('#image_prod').addClass("hide");
+            $('#id_image_prod').removeClass("hide");
+        });
+        $('#save').on('click', function(e) {
+            e.preventDefault();
+            $('#price_prod').prop("disabled",true);
+            $('#name_prod').prop("disabled",true);
+            $('#categ_prod').prop("disabled",true);
+            $('#image_prod').removeClass("hide");
+            $('#id_image_prod').addClass("hide");
+            $("#image_prod").attr("src",$('#id_image_prod').val());
+        });
+
+        $('#add_prod').on('click', function(e) {
+            e.preventDefault();
+            
+            let template_prod=`<tr>
+
+            <td>1</td>
+
+            <td>
+                <h4> <span class="badge badge-success">${$('#exis_add').val()}</span></h4>
+            </td>
+
+            <td>
+                <img src="${$('#img_add').val()}"
+                    alt="" id="image_prod">
+                <input type="text" id="id_image_prod" class="hide">
+            </td>
+
+            <td><input type="text" name="" id="name_prod" disabled
+                    placeholder="${$('#name_add').val()}"> </td>
+
+            <td><input type="text" name="" id="categ_prod" disabled
+                    placeholder="${$('#categ_add').val()}"></td>
+
+            <td><input type="text" name="" id="price_prod" disabled="disabled"
+                    placeholder="${$('#price_add').val()}"></td>
+            <td>
+                <div class="btn-group">
+
+                    <button type="button" id="editarProducto"
+                        class="btn btn-warning rounded-circle mr-2">
+
+                        <i class="fas fa-pencil-alt"></i>
+
+                    </button>
+
+                    <!-- <button type="button" class="btn btn-danger rounded-circle">
+
+                        <i class="fas fa-trash"></i>
+                    </button> -->
+
+                    <button type="button" class="btn btn-success rounded-circle"
+                        id="save">
+
+                        <i class="fas fa-save"></i>
+                    </button>
+
+                </div>
+
+            </td>
+
+        </tr>`
+            $('#table_prod').append(template_prod); 
+            $('.contenedorVistaProductos').addClass('none');
+            
+        });
+
+        $('#add_prod_button').on('click', function(e) {
+            e.preventDefault();
+            $('.contenedorVistaProductos').removeClass('none');
         });
     }
 
@@ -161,12 +234,6 @@
         //     $('#main-all').removeClass("hide");
         //     $('#product-specific').addClass("hide");
         // });
-
-        $('#editarProducto').on('click', function(e) {
-            e.preventDefault();
-            alert('clickeaste')
-            $('#price_prod').removeAttr("disabled");
-        });
 
     }
 
