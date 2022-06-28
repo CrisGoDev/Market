@@ -17518,3 +17518,32 @@ ul.timeline > li.process:before {
   background-color: #0077B5;
   border-radius: 5px;
 }
+
+.contenedorVistaProductos{
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  height: 100vh;
+  background-color: #0084b470;
+  z-index: 1000;
+}
+
+
+.contenedorSecundarioMoestrandor{
+  background-color: var(--color-principal);
+  width: 30vw;
+  margin-left: 35vw;
+  margin-top: 10vh;
+}
+
+.salidaModal{
+ margin-left: 25vw; 
+ border-radius: 50%;
+ background-color: white;
+ margin: 0 0 0 25vw;
+ width: 30px;
+ height: 30px;
+ text-align: center;
+ align-items: center;
+}
+
