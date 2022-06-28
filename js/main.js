@@ -96,6 +96,14 @@
         });
     }
 
+    function editProd(){
+        $('#editarProducto').on('click', function(e) {
+            e.preventDefault();
+            alert('clickeaste')
+            $('#price_prod').removeAttr("disabled");
+        });
+    }
+
     function subMenuToggle() {
         $('.menu--mobile .menu-item-has-children > .sub-toggle').on('click', function(e) {
             e.preventDefault();
@@ -153,6 +161,12 @@
         //     $('#main-all').removeClass("hide");
         //     $('#product-specific').addClass("hide");
         // });
+
+        $('#editarProducto').on('click', function(e) {
+            e.preventDefault();
+            alert('clickeaste')
+            $('#price_prod').removeAttr("disabled");
+        });
 
     }
 
@@ -734,6 +748,7 @@
         owlCarouselConfig();
         siteToggleAction();
         subMenuToggle();
+        editProd();
         masonry('.ps-masonry');
         productFilterToggle();
         tabs();
@@ -1083,16 +1098,16 @@
     // console.log(carritoCompleto);
     const $visitaCategorias=document.querySelector(".VerTodo");
 
-    if(!$visitaCategorias){
-        let carritoCompleto=document.querySelector(".carritoWebPrincipal");    
-        carritoCompleto.innerHTML=localStorage.getItem("carrito").replace("nombre","nombredos");
-    }else{        
-        $visitaCategorias.addEventListener("click",(e)=>{
-            let carritoCompleto=document.querySelector(".carritoWebPrincipal").innerHTML;    
-            localStorage.setItem("carrito",carritoCompleto);
-            window.location.href="categories.html";
-        })
-    }
+    // if(!$visitaCategorias){
+    //     let carritoCompleto=document.querySelector(".carritoWebPrincipal");    
+    //     carritoCompleto.innerHTML=localStorage.getItem("carrito");
+    // }else{        
+    //     $visitaCategorias.addEventListener("click",(e)=>{
+    //         let carritoCompleto=document.querySelector(".carritoWebPrincipal").innerHTML;    
+    //         localStorage.setItem("carrito",carritoCompleto);
+    //         window.location.href="categories.html";
+    //     })
+    // }
     
 
     let $medicamentosCarritoWebEventoMovil=document.querySelectorAll(".iconosDelCarritoConteinerMovil");
