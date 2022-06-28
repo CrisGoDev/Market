@@ -14808,7 +14808,13 @@ textarea.form-control {
 .hide{
   display: none;
 }
+#DataTables_Table_0_length{
+  display: none;
+}
 
+#DataTables_Table_0_filter{
+  display: none;
+}
 .ps-page--product .ps-page__container {
   display: -webkit-box;
   display: flex;

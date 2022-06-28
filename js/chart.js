@@ -1,9 +1,9 @@
 var config = {
     type: 'line',
     data: {
-        labels: ['January', 'February', 'March'],
+        labels: ['Enero', 'Febrero', 'Marzo'],
         datasets: [{
-            label: 'Product',
+            label: 'Productos',
             backgroundColor: 'red',
             borderColor: 'red',
             data: [10, 50, 40],
@@ -14,7 +14,7 @@ var config = {
         responsive: true,
         title: {
             display: true,
-            text: 'Total is 25 orders from Oct 25,2017 - Nov 8, 2017'
+            text: 'Total de ordenes son 51 ordenes de Oct 25,2017 - Nov 8, 2017'
         },
         scales: {
             yAxes: [{
@@ -46,18 +46,21 @@ var configPieChart = {
                 randomScalingFactor(),
                 randomScalingFactor(),
                 randomScalingFactor(),
+                randomScalingFactor(),
             ],
             backgroundColor: [
                 '#b1cc43',
                 '#cc9043',
                 '#0099cc',
+                '#e81123',
             ],
             label: 'Dataset 1'
         }],
         labels: [
-            'Marshall Kilburn Portable',
-            'Unero Military Classical',
-            'Sleeve Linened  Blend',
+            'Material Medico',
+            'Pastillas',
+            'Jarabes',
+            'Inyecciones',
         ]
     },
     options: {
