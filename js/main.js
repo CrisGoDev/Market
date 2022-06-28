@@ -112,7 +112,13 @@
             $('#categ_prod').prop("disabled",true);
             $('#image_prod').removeClass("hide");
             $('#id_image_prod').addClass("hide");
-            $("#image_prod").attr("src",$('#id_image_prod').val());
+            if($('#id_image_prod').val() ||$('#id_image_prod').val()!="" ){
+                $("#image_prod").attr("src",$('#id_image_prod').val());   
+            }
+        });
+
+        $('#out').on('click', function(e) {
+            $('.contenedorVistaProductos').removeClass('none');
         });
 
         $('#add_prod').on('click', function(e) {
@@ -234,11 +240,11 @@
             // current.siblings().find('.mega-menu__list').slideUp(350);
         });
 
-        // $('#showAll').on('click', function(e) {
-        //     e.preventDefault();
-        //     $('#main-all').removeClass("hide");
-        //     $('#product-specific').addClass("hide");
-        // });
+        $('#showAll').on('click', function(e) {
+            e.preventDefault();
+            $('#main-all').removeClass("hide");
+            $('#product-specific').addClass("hide");
+        });
 
     }
 
