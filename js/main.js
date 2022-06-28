@@ -789,7 +789,7 @@
                 precio=$medicamentoPrecio[k].textContent;
 
                 
-                cantidad=Math.abs(cantidad)+Math.abs(1);
+                cantidad=Math.abs(cantidad)+Math.abs(0.5);
                 $medicamentoCantidad[k].textContent=cantidad;
                 total=Math.abs(total)+Math.abs(precio);
                 
@@ -883,7 +883,7 @@
                 <i class="icon-cross"></i>
             </a>
             <a class="nombreMedicamentoCarritoWeb" data-nombre="${$medicamentosWeb[pocision].dataset.nombre}" href="#">${nombreMedicamento}</a>                                            
-            <small><strong>1</strong> x $<span>${precioMedicamento}</span></small>
+            <small><strong>0.5</strong> x $<span>${precioMedicamento}</span></small>
             <div class="iconosDelCarritoConteinerVenta" data-nombre="${$medicamentosWeb[pocision].dataset.nombre}">
                 <img src="./img-santini/icons/iconoSuma.svg" alt="Icono de Suma">
                 <img src="./img-santini/icons/iconoRestar.svg" alt="Icono de Resta">
@@ -945,7 +945,7 @@
                     <i class="icon-cross"></i>
                 </a>
                 <a class="nombreMedicamentoCarritoWeb" data-nombre="${$contenedor[pocision].dataset.nombre}" href="#">${nombreMedicamento}</a>                                            
-                <small><strong>1</strong> x $<span>${precioMedicamento}</span></small>
+                <small><strong>0.5</strong> x $<span>${precioMedicamento}</span></small>
                 <div class="iconosDelCarritoConteinerVenta" data-nombre="${$contenedor[pocision].dataset.nombre}">
                     <img src="./img-santini/icons/iconoSuma.svg" alt="Icono de Suma">
                     <img src="./img-santini/icons/iconoRestar.svg" alt="Icono de Resta">
@@ -1050,7 +1050,7 @@
                         <i class="icon-cross"></i>
                     </a>
                     <a class="nombreMedicamentoCarritoWeb" data-nombre="${nombreMEd}" href="#">${nombreMedicamento}</a>                                            
-                    <small><strong>0</strong> x $<span>${precioMedicamento}</span></small>
+                    <small><strong>1</strong> x $<span>${precioMedicamento}</span></small>
                     <div class="iconosDelCarritoConteinerVentaExistentes iconosDelCarritoConteinerVenta" data-nombre="${nombreMEd}">
                         <img src="./img-santini/icons/iconoSuma.svg" alt="Icono de Suma">
                         <img src="./img-santini/icons/iconoRestar.svg" alt="Icono de Resta">
@@ -1085,8 +1085,7 @@
 
     if(!$visitaCategorias){
         let carritoCompleto=document.querySelector(".carritoWebPrincipal");    
-        carritoCompleto.innerHTML.replace('iconosDelCarritoConteiner','iconosDelCarritoConteinerMovil').
-        replace('iconosDelCarritoConteinerVenta','iconosDelCarritoConteinerVentaMovil').replace('iconosDelCarritoConteinerVentaCategorias','iconosDelCarritoConteinerVentaCategoriasMovil')=localStorage.getItem("carrito");
+        carritoCompleto.innerHTML=localStorage.getItem("carrito").replace("nombre","nombredos");
     }else{        
         $visitaCategorias.addEventListener("click",(e)=>{
             let carritoCompleto=document.querySelector(".carritoWebPrincipal").innerHTML;    
