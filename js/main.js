@@ -1125,3 +1125,24 @@
             })            
     }
 
+
+
+    const $vistaElementos=document.querySelectorAll(".categoriaMejor div:nth-of-type(2) a");
+    const $galeria=document.querySelector(".ps-wrapper div div:nth-of-type(1) a img");
+    const $vistaElementosImagenes=document.querySelectorAll(".categoriaMejor div:nth-of-type(1) img:nth-of-type(1)");
+    console.log($vistaElementosImagenes[3]);
+    for(let y=0;y<$vistaElementos.length;y++){
+        $vistaElementos[y].addEventListener("click",(e)=>{
+            $galeria.setAttribute("src",$vistaElementosImagenes[y].getAttribute("src"));
+            document.querySelector(".ps-wrapper div div:nth-of-type(2) a img").setAttribute("src",$vistaElementosImagenes[y].getAttribute("src"));
+            document.querySelector(".ps-product__variants div:nth-of-type(1) img").setAttribute("src",$vistaElementosImagenes[y].getAttribute("src"));
+            document.querySelector(".ps-product__variants div:nth-of-type(2) img").setAttribute("src",$vistaElementosImagenes[y].getAttribute("src"));
+        })
+    }
+
+
+
+
+
+
+
