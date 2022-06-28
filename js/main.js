@@ -141,6 +141,11 @@
                 }
 
             });
+            $('#pay').on('click',()=>{
+                $('#container_pay').removeClass('none');
+                $('#main-all').addClass('none');
+                $('#product-specific').addClass('none')
+            })
         }
 
         $('.ps-product__title').on('click', function(e) {
@@ -1098,16 +1103,16 @@
     // console.log(carritoCompleto);
     const $visitaCategorias=document.querySelector(".VerTodo");
 
-    // if(!$visitaCategorias){
-    //     let carritoCompleto=document.querySelector(".carritoWebPrincipal");    
-    //     carritoCompleto.innerHTML=localStorage.getItem("carrito");
-    // }else{        
-    //     $visitaCategorias.addEventListener("click",(e)=>{
-    //         let carritoCompleto=document.querySelector(".carritoWebPrincipal").innerHTML;    
-    //         localStorage.setItem("carrito",carritoCompleto);
-    //         window.location.href="categories.html";
-    //     })
-    // }
+    if(!$visitaCategorias){
+        let carritoCompleto=document.querySelector(".carritoWebPrincipal");    
+        carritoCompleto.innerHTML=localStorage.getItem("carrito");
+    }else{        
+        $visitaCategorias.addEventListener("click",(e)=>{
+            let carritoCompleto=document.querySelector(".carritoWebPrincipal").innerHTML;    
+            localStorage.setItem("carrito",carritoCompleto);
+            window.location.href="categories.html";
+        })
+    }
     
 
     let $medicamentosCarritoWebEventoMovil=document.querySelectorAll(".iconosDelCarritoConteinerMovil");
@@ -1140,24 +1145,66 @@
             })            
     }
 
+    function eventosCate(catego){
+        const $vistaElementos=document.querySelectorAll(`${catego} div:nth-of-type(2) a`);
+        const $galeria=document.querySelector(`.ps-wrapper div div:nth-of-type(1) a img`);
+        const $vistaElementosImagenes=document.querySelectorAll(`${catego} div a img:nth-of-type(1)`);
+        for(let y=0;y<$vistaElementos.length;y++){
+            $vistaElementos[y].addEventListener("click",(e)=>{
+                console.log(y);
+                if($vistaElementosImagenes[y+1]){
+                    $galeria.setAttribute("src",$vistaElementosImagenes[y+1].getAttribute("src"));
+                    document.querySelector(".ps-wrapper div div:nth-of-type(2) a img").setAttribute("src",$vistaElementosImagenes[y+1].getAttribute("src"));
+                    document.querySelector(".ps-product__variants div:nth-of-type(1) img").setAttribute("src",$vistaElementosImagenes[y+1].getAttribute("src"));
+                    document.querySelector(".ps-product__variants div:nth-of-type(2) img").setAttribute("src",$vistaElementosImagenes[y+1].getAttribute("src"));
+                    document.querySelector(".ps-wrapper div div:nth-of-type(2) a img").setAttribute("src",$vistaElementosImagenes[y+1].getAttribute("src"));
+                    document.querySelector(".ps-product__variants div:nth-of-type(1) img").setAttribute("src",$vistaElementosImagenes[y+1].getAttribute("src"));
+                    document.querySelector(".ps-product__variants div:nth-of-type(2) img").setAttribute("src",$vistaElementosImagenes[y+1].getAttribute("src"));
+    
+                }else{
+                    $galeria.setAttribute("src",$vistaElementosImagenes[8].getAttribute("src"));
+                    document.querySelector(".ps-wrapper div div:nth-of-type(2) a img").setAttribute("src",$vistaElementosImagenes[8].getAttribute("src"));
+                    document.querySelector(".ps-product__variants div:nth-of-type(1) img").setAttribute("src",$vistaElementosImagenes[8].getAttribute("src"));
+                    document.querySelector(".ps-product__variants div:nth-of-type(2) img").setAttribute("src",$vistaElementosImagenes[8].getAttribute("src"));
+                    document.querySelector(".ps-wrapper div div:nth-of-type(2) a img").setAttribute("src",$vistaElementosImagenes[8].getAttribute("src"));
+                    document.querySelector(".ps-product__variants div:nth-of-type(1) img").setAttribute("src",$vistaElementosImagenes[8].getAttribute("src"));
+                    document.querySelector(".ps-product__variants div:nth-of-type(2) img").setAttribute("src",$vistaElementosImagenes[8].getAttribute("src"));
+    
+                }
+                
+                document.querySelector("h1").textContent=document.querySelectorAll(`${catego} div:nth-of-type(2) div:nth-of-type(1) a`)[y].textContent;    
+                
+                document.querySelectorAll("h4 span")[0].textContent=document.querySelectorAll(`${catego} div:nth-of-type(2) div:nth-of-type(1) p span`)[y].textContent;    
+                document.querySelectorAll("h4 span")[1].textContent=document.querySelectorAll(`${catego} div:nth-of-type(2) div:nth-of-type(1) p span`)[y].textContent;    
+            })
+        }
+    
+    }
 
-
-    const $vistaElementos=document.querySelectorAll(".categoriaMejor div:nth-of-type(2) a");
-    const $galeria=document.querySelector(".ps-wrapper div div:nth-of-type(1) a img");
-    const $vistaElementosImagenes=document.querySelectorAll(".categoriaMejor div:nth-of-type(1) img:nth-of-type(1)");
-    console.log($vistaElementosImagenes[3]);
+function eventosCateDos(catego){
+    
+    const $vistaElementos=document.querySelectorAll(`${catego} div:nth-of-type(2) div:nth-of-type(2) a`);
+    console.log($vistaElementos);
+    const $galeria=document.querySelector(`.ps-wrapper div div:nth-of-type(1) a img`);
+    const $vistaElementosImagenes=document.querySelectorAll(`${catego} div a img:nth-of-type(1)`);
     for(let y=0;y<$vistaElementos.length;y++){
         $vistaElementos[y].addEventListener("click",(e)=>{
-            $galeria.setAttribute("src",$vistaElementosImagenes[y].getAttribute("src"));
+            
+            
+            $galeria.setAttribute("src",$vistaElementosImagenes[y-2].getAttribute("src"));
             document.querySelector(".ps-wrapper div div:nth-of-type(2) a img").setAttribute("src",$vistaElementosImagenes[y].getAttribute("src"));
             document.querySelector(".ps-product__variants div:nth-of-type(1) img").setAttribute("src",$vistaElementosImagenes[y].getAttribute("src"));
             document.querySelector(".ps-product__variants div:nth-of-type(2) img").setAttribute("src",$vistaElementosImagenes[y].getAttribute("src"));
+            document.querySelector("h1").textContent=document.querySelectorAll(`${catego} div:nth-of-type(2) div:nth-of-type(1) a`)[y].textContent;    
+            
+            document.querySelectorAll("h4 span")[0].textContent=document.querySelectorAll(`${catego} div:nth-of-type(2) div:nth-of-type(1) p span`)[y].textContent;    
+            document.querySelectorAll("h4 span")[1].textContent=document.querySelectorAll(`${catego} div:nth-of-type(2) div:nth-of-type(1) p span`)[y].textContent;    
         })
     }
 
-
-
-
-
+}
+eventosCate(".categoriaMejor");
+eventosCateDos(".categoriaRecomendado");
+eventosCate(".medicamentoCateExistente");
 
 

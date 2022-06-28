@@ -235,8 +235,8 @@
 
                                     <h3>Sub Total:<strong>$<span><strong>669.98</strong></span></strong></h3>
                                     <figure>
-                                        <a class="ps-btn" href="shopping-cart.html">Ver Carrito</a>
-                                        <a class="ps-btn" href="checkout.html">Pagar</a>
+                                        
+                                        <a id="pay" class="" >Pagar</a>
                                     </figure>
 
                                 </div>
@@ -421,8 +421,8 @@
                                 <h3>Sub Total:<strong>$59.99</strong></h3>
 
                                 <figure>
-                                    <a class="ps-btn" href="shopping-cart.html">View Cart</a>
-                                    <a class="ps-btn" href="checkout.html">Checkout</a>
+                                    
+                                    <a class="ps-btn" >Pagar</a>
                                 </figure>
 
                             </div>
@@ -2391,11 +2391,11 @@
                             <div class="ps-product__info">
 
                                 <h1>Pastilla Contra La gripe Lab kernel</h1>
-                                <h4 class="ps-product__price sale">$93.59
-                                    <del> $125.17</del><small> (-25%)</small>
+                                <h4 class="ps-product__price sale">$<span>93.59</span>
+                                    <small> (-25%)</small>
                                 </h4>
 
-                                <h4 class="ps-product__price">$93.59</h4>
+                                <h4 class="ps-product__price">$<span>93.59</span></h4>
 
                                 <div class="ps-product__desc">
 
@@ -2805,6 +2805,205 @@
 
     </div><!-- End Product Specific -->
 
+    <!--=====================================
+    Checkout
+    ======================================--> 
+    <div class="ps-checkout ps-section--shopping none" id="container_pay">
+
+        <div class="container">
+
+            <div class="ps-section__header">
+
+                <h4>Pagar</h4>
+
+            </div>
+
+            <div class="ps-section__content">
+
+                <form class="ps-form--checkout" action="do_action" method="post">
+
+                    <div class="row">
+
+                        <div class="col-xl-7 col-lg-8 col-sm-12">
+
+                            <div class="ps-form__billing-info">
+
+                                <h3 class="ps-form__heading">Detalles de la factura</h3>
+
+                                <div class="form-group">
+
+                                    <label>Primer Nombre<sup>*</sup></label>
+
+                                    <div class="form-group__content">
+
+                                        <input class="form-control" type="text">
+
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label>Apellido<sup>*</sup></label>
+
+                                    <div class="form-group__content">
+
+                                        <input class="form-control" type="text">
+
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label>Direccion de Email<sup>*</sup></label>
+
+                                    <div class="form-group__content">
+
+                                        <input class="form-control" type="email">
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label>Telefono<sup>*</sup></label>
+
+                                    <div class="form-group__content">
+
+                                        <input class="form-control" type="text">
+
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label>Direccion<sup>*</sup></label>
+
+                                    <div class="form-group__content">
+
+                                        <input class="form-control" type="text">
+
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <div class="ps-checkbox">
+
+                                        <input class="form-control" type="checkbox" id="create-account">
+
+                                        <label for="create-account">Salvar Direccion?</label>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-xl-5 col-lg-4 col-sm-12">
+
+                            <div class="ps-form__total">
+
+                                <h3 class="ps-form__heading">Tu orden</h3>
+
+                                <div class="content">
+
+                                    <div class="ps-block--checkout-total">
+
+                                        <div class="ps-block__header d-flex justify-content-between">
+
+                                            <p>Producto</p>
+
+                                            <p>Total</p>
+
+                                        </div>
+
+                                        <div class="ps-block__content">
+
+                                            <table class="table ps-block__products">
+
+                                                <tbody>
+
+                                                    <tr>
+
+                                                        <td>
+                                                            <a href="#"> Pastilla Generica</a>
+                                                        </td>
+
+                                                        <td class="text-right">$57.99</td>
+
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        <td>
+                                                            <a href="#"> Jarabe regular Para la tos</a>
+                                                        </td>
+
+                                                        <td class="text-right">$625.50</td>
+
+                                                    </tr>
+
+                                                </tbody>
+
+                                            </table>
+                                            
+                                            <h3 class="text-right">Total <span>$683.49</span></h3>
+
+                                        </div>
+
+                                    </div>
+
+                                    <hr class="py-3">
+
+                                    <div class="form-group">
+
+                                        <div class="ps-radio">
+
+                                            <input class="form-control" type="radio" id="pay-paypal" name="payment-method" value="paypal" checked>
+
+                                            <label for="pay-paypal">Pagar con paypal?  <span><img src="img/payment-method/paypal.jpg" class="w-50"></span></label>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="form-group">
+
+                                        <div class="ps-radio">
+
+                                            <input class="form-control" type="radio" id="pay-mercadopago" name="payment-method" value="mercado-pago">
+
+                                            <label for="pay-mercadopago">Pagar con Mercado Pago? <span><img src="img/payment-method/mercado_pago.jpg" class="w-50"></span></label>
+
+                                        </div>
+
+                                    </div>
+
+                                    <a class="ps-btn ps-btn--fullwidth" href="categories.html">Completar Pago</a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
     <!--=====================================
 	Newletter
 	======================================-->
