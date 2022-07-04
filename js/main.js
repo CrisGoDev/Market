@@ -1125,11 +1125,13 @@ var AllProducts = [
 
                                         	<a class="ps-product__title" href="">${prod.Titulo}</a>
 
+
                                             <p class="ps-product__price">$<span>${prod.Precio}</span></p>
 
                                         </div>
 
                                         <div class="ps-product__content hover">
+
 
                                         	<a class="ps-product__title" href="">
                                         	Laboratorio Ramos</a>
@@ -1890,6 +1892,7 @@ for (let y = 0; y < $categoriaMejoresContenedorMovil.length; y++) {
   });
 }
 
+
 function eventosCate(catego) {
   const $vistaElementos = document.querySelectorAll(
     `${catego} div:nth-of-type(2) a`
@@ -1983,6 +1986,149 @@ function eventosCate(catego) {
         )[y].textContent;
     });
   }
+=======
+function menejarUsuarios(){
+    const d=document;
+const usuario="admin", contraseñaUsuario="admin", entrar=false;
+
+function mostrarUsuario(e){    
+    const btnEntrarLoginUno=d.querySelector(".btnLoginIndexUno");
+    const btnEntrarLoginDos=d.querySelector(".btnLoginLoginDos");
+    const btnRegisterindexDos=d.querySelector(".btnRegisterindexDos");
+    const btnRegisterindexUno=d.querySelector(".btnRegisterindexUno");
+    const btnFormSubmitLogin=d.querySelector(".btnFormSubmitLogin");
+    const btnFormSubmitRegister=d.querySelector(".btnFormSubmitRegister");
+
+//Este para modificar la interfaz desde administrador
+
+if(e.target==btnFormSubmitLogin ){       
+    //Con esto se loguea                     
+    if(document.querySelector(".usuarioLogin").value=="admin" 
+    && document.querySelector(".passwordLogin").value=="admin"){
+        localStorage.setItem("logueado","trueadmin");
+        window.location.href="index.html";
+    }else if(localStorage.getItem("usuario")==document.querySelector(".usuarioLogin").value 
+ && localStorage.getItem("contraseña")==document.querySelector(".passwordLogin").value){
+    alert("Se a Logueado");
+    localStorage.setItem("logueado","true");
+    window.location.href="index.html";
+ } else{        
+    alert("Datos incorrectos");
+    localStorage.setItem("logueado","false");
+ }
+  
+}
+
+if(e.target==btnFormSubmitRegister){
+    //Esto es para registrarme
+    localStorage.setItem("usuario",document.querySelector(".userName").value);
+    localStorage.setItem("contraseña",document.querySelector(".passwordRegister").value); 
+    localStorage.setItem("nombre",document.querySelector(".nombrePersona").value); 
+}
+
+}
+ function cerrar(er){
+    //Esto es para cerrar sesion
+    document.querySelectorAll(".cerrarSesion")[0].addEventListener("click",(er)=>{
+        if(er.target==document.querySelectorAll(".cerrarSesion")[0] || er.target==document.querySelectorAll(".cerrarSesion")[1]){
+            
+            localStorage.setItem("logueado","false");
+            window.location.href="index.html";
+        }
+    })
+    document.querySelectorAll(".cerrarSesion")[1].addEventListener("click",(er)=>{
+        if(er.target==document.querySelectorAll(".cerrarSesion")[0] || er.target==document.querySelectorAll(".cerrarSesion")[1]){
+            
+            localStorage.setItem("logueado","false");
+            window.location.href="index.html";
+        }
+    })
+ }
+
+d.addEventListener("click",async (e)=>{
+    //Aqui se manda a llamar el metodo cerrar
+    await mostrarUsuario(e);
+    cerrar(e);
+    if(e.target==d.querySelector(".iconCerrarCesionLogin")){
+        localStorage.setItem("logueado","false");
+        
+        window.location.href="index.html";
+    }
+    
+}
+)
+        
+    if(localStorage.getItem("logueado")=="trueadmin"){                  
+        
+        if(document.querySelector(".btnLoginIndexUno")){
+            //Aqui van las modificaciones para el documento index para usuario administrador
+            document.querySelector(".btnLoginIndexUno").textContent="Bienvenido administrador";
+            document.querySelector(".btnLoginLoginDos").textContent="Bienvenido administrador";
+            document.querySelector(".btnRegisterindexDos").style.display="none";
+            document.querySelector(".btnRegisterindexUno").style.display="none";
+            document.querySelectorAll(".cerrarSesion")[0].style.display="block";
+            document.querySelectorAll(".cerrarSesion")[1].style.display="block";
+            document.querySelectorAll(".ajustes")[0].style.display="block";
+            document.querySelectorAll(".ajustes")[1].style.display="block";
+            
+        }else if(document.querySelector(".btnLoginPageRegisterUno")){
+            //Aqui van las modificaciones para el documento login-register para usuario administrador
+            document.querySelector(".btnLoginPageRegisterUno").textContent="Bienvenido administrador";
+            document.querySelector(".btnLoginPageRegisterDos").textContent="Bienvenido administrador";
+            document.querySelector(".btnRegisterPageRegisterUno").style.display="none";
+            document.querySelector(".btnRegisterPageRegisterDos").style.display="none";
+        }else if(document.querySelector(".btnEntrarLoginSales")){
+            //Aqui van las modificaciones para el documento my-account_my-sales para usuario administrador
+            document.querySelectorAll(".btnEntrarLoginSales")[0].textContent="Bienbenido Administrador";
+            document.querySelectorAll(".btnEntrarLoginSales")[1].textContent="Bienbenido Administrador";
+        }else if(document.querySelector(".btnLoginCategori")){
+            //Aqui van las modificaciones para el documento categori para usuario administrador
+            document.querySelectorAll(".btnLoginCategori")[0].textContent="Bienvenido Administrador";
+            document.querySelectorAll(".btnLoginCategori")[1].textContent="Bienvenido Administrador";   
+            document.querySelectorAll(".btnRegistercateforiDos")[0].style.display="none";
+            document.querySelectorAll(".btnRegistercateforiDos")[1].style.display="none";
+        }
+
+    }else if(localStorage.getItem("logueado")=="true"){
+        
+        if(document.querySelector(".btnLoginIndexUno")){
+            //Aqui van las modificaciones para el documento index para usuario comun
+            document.querySelector(".btnLoginIndexUno").textContent="Bienvenido "+localStorage.getItem("nombre");
+            document.querySelector(".btnLoginLoginDos").textContent="Bienvenido "+localStorage.getItem("nombre");
+            document.querySelector(".btnRegisterindexDos").style.display="none";
+            document.querySelector(".btnRegisterindexUno").style.display="none";
+            document.querySelectorAll(".cerrarSesion")[0].style.display="block";
+            document.querySelectorAll(".cerrarSesion")[1].style.display="block";
+            document.querySelector(".ajustes").style.display="none";
+        }else if(document.querySelector(".btnLoginPageRegisterUno")){
+            //Aqui van las modificaciones para el documento login-register para usuario comun
+            document.querySelector(".btnLoginPageRegisterUno").textContent="Bienvenido "+localStorage.getItem("nombre");
+            document.querySelector(".btnLoginPageRegisterDos").textContent="Bienvenido "+localStorage.getItem("nombre");
+            document.querySelector(".btnRegisterPageRegisterUno").style.display="none";
+            document.querySelector(".btnRegisterPageRegisterDos").style.display="none";
+            document.querySelector(".cerrarSesion").style.display="block";
+            document.querySelector(".ajustes").style.display="none";
+        }else if(document.querySelector(".btnLoginCategori")){
+            //Aqui van las modificaciones para el documento categori para usuario comun
+            document.querySelectorAll(".btnLoginCategori")[0].textContent="Bienvenido "+localStorage.getItem("nombre");
+            document.querySelectorAll(".btnLoginCategori")[1].textContent="Bienvenido "+localStorage.getItem("nombre");
+            document.querySelectorAll(".btnRegistercateforiDos")[0].style.display="none";
+            document.querySelectorAll(".btnRegistercateforiDos")[1].style.display="none";
+            document.querySelectorAll(".cerrarSesion")[0].style.display="block";
+            document.querySelectorAll(".cerrarSesion")[1].style.display="block";
+            document.querySelectorAll(".ajustes")[0].style.display="none";
+            document.querySelectorAll(".ajustes")[1].style.display="none";
+        }
+
+    }else{
+        //Aqui van las modificaciones para el documento index para ninguno de los usuarios
+        document.querySelectorAll(".cerrarSesion")[0].style.display="none";
+        document.querySelectorAll(".cerrarSesion")[1].style.display="none";
+        if(document.querySelector(".ajustes")){
+            document.querySelector(".ajustes").style.display="none";
+        }
+    }
+
 }
 
 function eventosCateDos(catego) {
@@ -2026,6 +2172,6 @@ function eventosCateDos(catego) {
     });
   }
 }
-// eventosCate(".categoriaMejor");
-// eventosCateDos(".categoriaRecomendado");
-// eventosCate(".medicamentoCateExistente");
+ eventosCate(".categoriaMejor");
+eventosCateDos(".categoriaRecomendado");
+eventosCate(".medicamentoCateExistente");

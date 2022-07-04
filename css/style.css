@@ -17554,3 +17554,10 @@ ul.timeline > li.process:before {
  align-items: center;
 }
 
+
+.categoriaMejor div:nth-of-type(2) div:nth-of-type(2) a{
+  /* font-size: 4rem; */
+}
+.subMenuLogin{
+  float: left;  
+}
