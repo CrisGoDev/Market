@@ -1,0 +1,542 @@
+<!--=====================================
+    									Product
+    									======================================--> 
+
+                                        <div class="col-lg-2 col-md-4 col-6">
+
+                                            <div class="ps-product medicamentoCateExistente">
+
+                                                <div class="ps-product__thumbnail">
+
+                                                	<a href="">
+                                                		<img src="https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/bp-advil/es_US/products/thumbnail_below_toute_032917.jpg?auto=format" alt="">
+                                                	</a>
+
+                                                    
+
+                                                </div>
+
+                                                <div class="ps-product__container">
+
+                                                	<a class="ps-product__vendor" href="#">Farmacia Santini</a>
+
+                                                    <div class="ps-product__content">
+
+                                                    	<a class="ps-product__title" href="" data-nombre="PSTDEICISEIS">
+                                                    	Pastilla contra el dolor de Cabez</a>
+
+                                                        <p class="ps-product__price">$<span>13.00</span></p>
+
+                                                    </div>
+
+                                                    <div class="ps-product__content hover">
+
+                                                    	<a class="ps-product__title" href="">
+                                                    	Laboratorio Advil</a>
+
+                                                        <p class="ps-product__price">$1310.00</p>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div><!-- End Product -->
+
+										<!--=====================================
+    									Product
+    									======================================--> 
+
+                                        <div class="col-lg-2 col-md-4 col-6">
+
+                                            <div class="ps-product medicamentoCateExistente">
+
+                                                <div class="ps-product__thumbnail">
+
+                                                	<a href="">
+                                                		<img src="https://www.gaceta.unam.mx/wp-content/uploads/2020/09/200907-aca1-des-f1-farmacos-con-base-en-organismos-marinos.jpg" alt="">
+                                                	</a>
+
+                                                </div>
+
+                                                <div class="ps-product__container">
+
+                                                	<a class="ps-product__vendor" href="#">Farmacia Santini</a>
+
+                                                    <div class="ps-product__content">
+
+                                                    	<a class="ps-product__title" href="" data-nombre="PSTDIECISIETE">
+                                                    	Pastilla contra el dolor de Cabez</a>
+
+                                                        <p class="ps-product__price">$<span>13.00</span></p>
+
+                                                    </div>
+
+                                                    <div class="ps-product__content hover">
+
+                                                    	<a class="ps-product__title" href="">
+                                                    	Laboratorio Advil</a>
+
+                                                        <p class="ps-product__price">$1310.00</p>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div><!-- End Product -->
+
+                                        <!--=====================================
+    									Product
+    									======================================--> 
+
+                                        <div class="col-lg-2 col-md-4 col-6">
+
+                                            <div class="ps-product medicamentoCateExistente">
+
+                                                <div class="ps-product__thumbnail">
+
+                                                	<a href="">
+                                                		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI65bE37s8AGn7Fglbpb5R8LUVkxMgfwnFdA&usqp=CAU" alt="">
+                                                	</a>
+
+                                                   
+
+                                                </div>
+
+                                                <div class="ps-product__container">
+
+                                                	<a class="ps-product__vendor" href="#">Farmacia Santini</a>
+
+                                                    <div class="ps-product__content">
+
+                                                    	<a class="ps-product__title" href="" data-nombre="PSTDIECIOCHO">
+                                                    	Pastilla contra el dolor de Cabez</a>
+
+                                                        <p class="ps-product__price">$<span>13.00</span></p>
+
+                                                    </div>
+
+                                                    <div class="ps-product__content hover">
+
+                                                    	<a class="ps-product__title" href="">
+                                                    	Laboratorio Advil</a>
+
+                                                        <p class="ps-product__price">$1310.00</p>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div><!-- End Product -->
+
+
+                                        <!--=====================================
+    									Product
+    									======================================--> 
+
+                                        <div class="col-lg-2 col-md-4 col-6">
+
+                                            <div class="ps-product medicamentoCateExistente">
+
+                                                <div class="ps-product__thumbnail">
+
+                                                	<a href="">
+                                                		<img src="https://www.bbvaopenmind.com/wp-content/uploads/2017/02/1_Viagra-2.jpg" alt="">
+                                                	</a>
+
+
+                                                </div>
+
+                                                <div class="ps-product__container">
+
+                                                	<a class="ps-product__vendor" href="#">Farmacia Santini</a>
+
+                                                    <div class="ps-product__content">
+
+                                                    	<a class="ps-product__title" href="" data-nombre="PSTDIECINUEVE">
+                                                    	Pastilla contra el dolor de Cabez</a>
+
+                                                        <p class="ps-product__price">$<span>13.00</span></p>
+
+                                                    </div>
+
+                                                    <div class="ps-product__content hover">
+
+                                                    	<a class="ps-product__title" href="">
+                                                    	Laboratorio Advil</a>
+
+                                                        <p class="ps-product__price">$1310.00</p>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div><!-- End Product -->
+
+
+                                        <!--=====================================
+    									Product
+    									======================================--> 
+
+                                        <div class="col-lg-2 col-md-4 col-6">
+
+                                            <div class="ps-product medicamentoCateExistente">
+
+                                                <div class="ps-product__thumbnail">
+
+                                                	<a href="">
+                                                		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRuWD5aguDe8NYilE-z3SNHkPxc7FonI6u2A&usqp=CAU" alt="">
+                                                	</a>
+
+
+                                                </div>
+
+                                                <div class="ps-product__container">
+
+                                                	<a class="ps-product__vendor" href="#">Farmacia Santini</a>
+
+                                                    <div class="ps-product__content">
+
+                                                    	<a class="ps-product__title" href="" data-nombre="PSTVEINTE">
+                                                    	Pastilla contra el dolor de Cabez</a>
+
+                                                        <p class="ps-product__price">$<span>13.00</span></p>
+
+                                                    </div>
+
+                                                    <div class="ps-product__content hover">
+
+                                                    	<a class="ps-product__title" href="">
+                                                    	Laboratorio Advil</a>
+
+                                                        <p class="ps-product__price">$1310.00</p>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div><!-- End Product -->
+
+
+                                        <!--=====================================
+    									Product
+    									======================================--> 
+
+                                        <div class="col-lg-2 col-md-4 col-6">
+
+                                            <div class="ps-product medicamentoCateExistente">
+
+                                                <div class="ps-product__thumbnail">
+
+                                                	<a href="">
+                                                		<img src="https://cdn.aarp.net/content/dam/aarp/health/drugs_supplements/2017/11/1140-pile-pills-happy-side-effects-esp.jpg" alt="">
+                                                	</a>
+
+
+                                                </div>
+
+                                                <div class="ps-product__container">
+
+                                                	<a class="ps-product__vendor" href="#">Farmacia Santini</a>
+
+                                                    <div class="ps-product__content">
+
+                                                    	<a class="ps-product__title" href="" data-nombre="PSTVEINTIUNO">
+                                                    	Pastilla contra el dolor de Cabez</a>
+
+                                                        <p class="ps-product__price">$<span>13.00</span></p>
+
+                                                    </div>
+
+                                                    <div class="ps-product__content hover">
+
+                                                    	<a class="ps-product__title" href="">
+                                                    	Laboratorio Advil</a>
+
+                                                        <p class="ps-product__price">$1310.00</p>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div><!-- End Product -->
+
+
+                                        <!--=====================================
+    									Product
+    									======================================--> 
+
+                                        <div class="col-lg-2 col-md-4 col-6">
+
+                                            <div class="ps-product medicamentoCateExistente">
+
+                                                <div class="ps-product__thumbnail">
+
+                                                	<a href="">
+                                                		<img src="https://www.consalud.es/uploads/s1/17/58/98/0/farmacos-foto-freepik.jpeg" alt="">
+                                                	</a>
+
+                                                </div>
+
+                                                <div class="ps-product__container">
+
+                                                	<a class="ps-product__vendor" href="#">Farmacia Santini</a>
+
+                                                    <div class="ps-product__content">
+
+                                                    	<a class="ps-product__title" href="" data-nombre="PSTVEINTIDOS">
+                                                    	Pastilla contra el dolor de Cabez</a>
+
+                                                        <p class="ps-product__price">$<span>13.00</span></p>
+
+                                                    </div>
+
+                                                    <div class="ps-product__content hover">
+
+                                                    	<a class="ps-product__title" href="">
+                                                    	Laboratorio Advil</a>
+
+                                                        <p class="ps-product__price">$1310.00</p>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div><!-- End Product -->
+
+
+                                        <!--=====================================
+    									Product
+    									======================================--> 
+
+                                        <div class="col-lg-2 col-md-4 col-6">
+
+                                            <div class="ps-product medicamentoCateExistente">
+
+                                                <div class="ps-product__thumbnail">
+
+                                                	<a href="">
+                                                		<img src="https://media.nidux.net/pull/599/800/10490/1064-product-620bdceaae860-whatsapp-image-2022-02-15-at-11.01.22-am.jpeg" alt="">
+                                                    </a>
+
+                                                </div>
+
+                                                <div class="ps-product__container">
+
+                                                	<a class="ps-product__vendor" href="#">Farmacia Santini</a>
+
+                                                    <div class="ps-product__content">
+
+                                                    	<a class="ps-product__title" href="" data-nombre="PSTVEINTITRES">
+                                                    	Pastilla contra el dolor de Cabez</a>
+
+                                                        <p class="ps-product__price">$<span>13.00</span></p>
+
+                                                    </div>
+
+                                                    <div class="ps-product__content hover">
+
+                                                    	<a class="ps-product__title" href="">
+                                                    	Laboratorio Advil</a>
+
+                                                        <p class="ps-product__price">$1310.00</p>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div><!-- End Product -->
+
+                                        <!--=====================================
+    									Product
+    									======================================--> 
+
+                                        <div class="col-lg-2 col-md-4 col-6">
+
+                                            <div class="ps-product medicamentoCateExistente">
+
+                                                <div class="ps-product__thumbnail">
+
+                                                	<a href="">
+                                                		<img src="https://forbes.es/wp-content/uploads/2017/05/201689102853_1.jpg" alt="">
+                                                	</a>
+
+                                                </div>
+
+                                                <div class="ps-product__container">
+
+                                                	<a class="ps-product__vendor" href="#">Farmacia Santini</a>
+
+                                                    <div class="ps-product__content">
+
+                                                    	<a class="ps-product__title" href="" data-nombre="PSTVEINTICUATRO">
+                                                    	Pastilla contra el dolor de Cabez</a>
+
+                                                        <p class="ps-product__price">$<span>13.00</span></p>
+
+                                                    </div>
+
+                                                    <div class="ps-product__content hover">
+
+                                                    	<a class="ps-product__title" href="">
+                                                    	Laboratorio Advil</a>
+
+                                                        <p class="ps-product__price">$1310.00</p>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div><!-- End Product -->
+
+
+                                        <!--=====================================
+    									Product
+    									======================================--> 
+
+                                        <div class="col-lg-2 col-md-4 col-6">
+
+                                            <div class="ps-product medicamentoCateExistente">
+
+                                                <div class="ps-product__thumbnail">
+
+                                                	<a href="">
+                                                		<img src="https://noticiasdelaciencia.com/upload/images/06_2020/5129_flutox.jpg" alt="">
+                                                	</a>
+
+                                                </div>
+
+                                                <div class="ps-product__container">
+
+                                                	<a class="ps-product__vendor" href="#">Farmacia Santini</a>
+
+                                                    <div class="ps-product__content">
+
+                                                    	<a class="ps-product__title" href="" data-nombre="PSTVEINTICINCO">
+                                                    	Pastilla contra el dolor de Cabez</a>
+
+                                                        <p class="ps-product__price">$<span>13.00</span></p>
+
+                                                    </div>
+
+                                                    <div class="ps-product__content hover">
+
+                                                    	<a class="ps-product__title" href="">
+                                                    	Laboratorio Advil</a>
+
+                                                        <p class="ps-product__price">$1310.00</p>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div><!-- End Product -->
+
+
+                                        <!--=====================================
+    									Product
+    									======================================--> 
+
+                                        <div class="col-lg-2 col-md-4 col-6">
+
+                                            <div class="ps-product medicamentoCateExistente">
+
+                                                <div class="ps-product__thumbnail">
+
+                                                	<a href="">
+                                                		<img src="https://www.iagua.es/sites/default/files/styles/thumbnail-830x455/public/pastillas-_pixabay.jpg?itok=k5sKNL-8" alt="">
+                                                	</a>
+
+
+                                                </div>
+
+                                                <div class="ps-product__container">
+
+                                                	<a class="ps-product__vendor" href="#">Farmacia Santini</a>
+
+                                                    <div class="ps-product__content">
+
+                                                    	<a class="ps-product__title" href="" data-nombre="PSTVEINTISEIS">
+                                                    	Pastilla contra el dolor de Cabez</a>
+
+                                                        <p class="ps-product__price">$<span>13.00</span></p>
+
+                                                    </div>
+
+                                                    <div class="ps-product__content hover">
+
+                                                    	<a class="ps-product__title" href="">
+                                                    	Laboratorio Advil</a>
+
+                                                        <p class="ps-product__price">$1310.00</p>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div><!-- End Product -->
+
+                                        <!--=====================================
+    									Product
+    									======================================--> 
+
+                                        <div class="col-lg-2 col-md-4 col-6">
+
+                                            <div class="ps-product medicamentoCateExistente">
+
+                                                <div class="ps-product__thumbnail">
+
+                                                	<a href="">
+                                                		<img src="https://homomedicus.com/wp-content/uploads/2022/06/istock-1027245612-635x357-1.jpg" alt="">
+                                                	</a>
+
+                                                </div>
+
+                                                <div class="ps-product__container">
+
+                                                	<a class="ps-product__vendor" href="#">Farmacia Santini</a>
+
+                                                    <div class="ps-product__content">
+
+                                                    	<a class="ps-product__title" href="" data-nombre="PSTQUINCE">
+                                                    	Pastilla contra el dolor de Cabez</a>
+
+                                                        <p class="ps-product__price">$<span>13.00</span></p>
+
+                                                    </div>
+
+                                                    <div class="ps-product__content hover">
+
+                                                    	<a class="ps-product__title" href="">
+                                                    	Laboratorio Advil</a>
+
+                                                        <p class="ps-product__price">$1310.00</p>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div><!-- End Product -->

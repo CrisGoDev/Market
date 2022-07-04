@@ -8264,7 +8264,7 @@ textarea.form-control {
   color: #000;
 }
 
-.ps-product .ps-product__content.hover {
+.ps-product .ps-product__content .hover {
   display: block;
   position: absolute;
   top: 100%;
@@ -17553,6 +17553,7 @@ ul.timeline > li.process:before {
  text-align: center;
  align-items: center;
 }
+
 
 .categoriaMejor div:nth-of-type(2) div:nth-of-type(2) a{
   /* font-size: 4rem; */
