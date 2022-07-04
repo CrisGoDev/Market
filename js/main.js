@@ -1986,7 +1986,8 @@ function eventosCate(catego) {
         )[y].textContent;
     });
   }
-=======
+
+
 function menejarUsuarios(){
     const d=document;
 const usuario="admin", contraseñaUsuario="admin", entrar=false;
@@ -2128,9 +2129,9 @@ d.addEventListener("click",async (e)=>{
             document.querySelector(".ajustes").style.display="none";
         }
     }
-
+  
 }
-
+menejarUsuarios();
 function eventosCateDos(catego) {
   const $vistaElementos = document.querySelectorAll(
     `${catego} div:nth-of-type(2) div:nth-of-type(2) a`
@@ -2171,6 +2172,7 @@ function eventosCateDos(catego) {
         )[y].textContent;
     });
   }
+}
 }
  eventosCate(".categoriaMejor");
 eventosCateDos(".categoriaRecomendado");
