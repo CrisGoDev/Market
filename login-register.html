@@ -294,11 +294,13 @@
 
                         <div class="ps-block--user-header">
                             <div class="ps-block__left">
-                                <i class="icon-user"></i>
+                                <i class="icon-user iconCerrarCesionLogin"></i>
                             </div>
                             <div class="ps-block__right">
-                                <a href="login-register.html">Login</a>
-                                <a href="login-register.html">Register</a>
+                                <a href="login-register.html" class="btnLoginPageRegisterUno"></a>
+                                <a href="login-register.html" style="display: none;" class="btnRegisterPageRegisterUno">Registrarse</a>
+                                <a class="cerrarSesion">Cerrar Sesion</a>
+                                <a href="my-account_my-sales.html" class="ajustes">Ajustes</a>
                             </div>
                         </div>
 
@@ -483,8 +485,10 @@
                             <i class="icon-user"></i>
                         </div>
                         <div class="ps-block__right">
-                            <a href="my-account_my-sales.html">Entar</a>
-                            <a href="categories.html">Registrarse</a>
+                            <a href="my-account_my-sales.html" class="btnLoginPageRegisterDos">Entrar</a>
+                            <a href="categories.html" class="btnRegisterPageRegisterDos">Registrarse</a>
+                            <a class="cerrarSesion">Cerrar Sesion</a>
+                            <a href="my-account_my-sales.html" class="ajustes">Ajustes</a>
                         </div>
 
                     </div>
@@ -538,9 +542,8 @@
 
                 <ul class="ps-tab-list">
 
-                    <li class="active"><a href="#sign-in">Login</a></li>
-
-                    <li class=""><a href="#register">Register</a></li>
+                    <li class="active"><a href="#sign-in" >Entrar</a></li>
+                    <li class=""><a href="#register" >Registrarse</a></li>
 
                 </ul>
 
@@ -558,13 +561,13 @@
 
                             <div class="form-group">
 
-                                <input class="form-control" type="text" placeholder="Username or email address">
+                                <input class="form-control usuarioLogin" type="text" placeholder="Nombre de Usuario o correo electronico">
 
                             </div>
 
                             <div class="form-group form-forgot">
 
-                                <input class="form-control" type="password" placeholder="Password">
+                                <input class="form-control passwordLogin" type="password" placeholder="Contraseña">
 
 
                             </div>
@@ -583,7 +586,7 @@
 
                             <div class="form-group submtit">
 
-                                <a href="my-account_my-sales.html" class="ps-btn ps-btn--fullwidth">Entrar</a>
+                                <a class="ps-btn ps-btn--fullwidth btnFormSubmitLogin" >Entrar</a>
 
                             </div>
 
@@ -599,41 +602,41 @@
 
                         <div class="ps-form__content">
 
-                            <h5>Register An Account</h5>
+                            <h5>Registra una cuenta</h5>
 
                             <div class="form-group">
 
-                                <input class="form-control" type="text" placeholder="First name">
+                                <input class="form-control nombrePersona" type="text" required placeholder="Nombres">
 
                             </div>
 
                             <div class="form-group">
 
-                                <input class="form-control" type="text" placeholder="Last name">
+                                <input class="form-control" type="text" placeholder="Apellidos">
 
                             </div>
 
                             <div class="form-group">
 
-                                <input class="form-control" type="text" placeholder="Username">
+                                <input class="form-control userName" required type="text" placeholder="Nombre de Usuario">
 
                             </div>
 
                             <div class="form-group">
 
-                                <input class="form-control" type="email" placeholder="Email address">
+                                <input class="form-control" required type="email" placeholder="Email">
 
                             </div>
 
                             <div class="form-group">
 
-                                <input class="form-control" type="text" placeholder="Password">
+                                <input class="form-control passwordRegister" required type="password" placeholder="Contraseña">
 
                             </div>
 
                             <div class="form-group submtit">
-
-                                <button class="ps-btn ps-btn--fullwidth">Registrarse</button>
+                                <a href="login-register.html" class="ps-btn ps-btn--fullwidth">Registarse</a>
+                                <!-- <button class="ps-btn ps-btn--fullwidth btnFormSubmitRegister">Registrarse</button> -->
 
                             </div>
 
