@@ -17561,3 +17561,7 @@ ul.timeline > li.process:before {
 .subMenuLogin{
   float: left;  
 }
+
+.pagoMetodos{
+  margin: 0 auto;
+}
