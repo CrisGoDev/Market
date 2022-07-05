@@ -14305,6 +14305,7 @@ textarea.form-control {
   }
 }
 
+
 @media (min-width: 1200px) {
   .ps-store-list > .container > .ps-section__header {
     padding: 0px 0 30px;
@@ -17562,6 +17563,8 @@ ul.timeline > li.process:before {
   float: left;  
 }
 
+
 .pagoMetodos{
   margin: 0 auto;
 }
+
