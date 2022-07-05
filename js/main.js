@@ -37,6 +37,7 @@ var Banner_Secundario = [
 
 var Main_Prod = [
   {
+    Id: 1,
     Link: "https://cdn.shopify.com/s/files/1/0509/1616/3789/products/Disenosintitulo_23_530x@2x.jpg?v=1631715450",
     Titulo: "Jarabe Para La tos Generico",
     Descuento: "16%",
@@ -53,8 +54,10 @@ var Main_Prod = [
       "https://medlineapp.com/wp-content/uploads/2021/10/Medicine-58.png",
       "https://i.ebayimg.com/images/g/kbMAAOSw2kZfI2Dy/s-l500.jpg",
     ],
+    Exist: 90,
   },
   {
+    Id: 2,
     Link: "https://www.tylenol.com/sites/tylenol_us/files/styles/large/public/product-images/tylp_est_rrg_bty_ft_updated_0.jpg",
     Titulo: "Pastillas contra el dolor",
     Descuento: "16%",
@@ -62,12 +65,14 @@ var Main_Prod = [
     ConDescuento: "440",
     Lab: "Advil",
     Caracteristicas: [
-        "Eficaz",
-        "Acaba De manera Rapida EL Dolor de cabes",
-        "Nada Mejor",
-      ],
+      "Eficaz",
+      "Acaba De manera Rapida EL Dolor de cabes",
+      "Nada Mejor",
+    ],
+    Exist: 90,
   },
   {
+    Id: 3,
     Link: "https://www.farma-vazquez.com/76933-home_default/aspirina-complex-10-sobres.jpg",
     Titulo: "Aspirina Por Tableta",
     Descuento: "16%",
@@ -75,12 +80,14 @@ var Main_Prod = [
     ConDescuento: "440",
     Lab: "Advil",
     Caracteristicas: [
-        "Eficaz",
-        "Acaba De manera Rapida EL Dolor de cabes",
-        "Nada Mejor",
-      ],
+      "Eficaz",
+      "Acaba De manera Rapida EL Dolor de cabes",
+      "Nada Mejor",
+    ],
+    Exist: 90,
   },
   {
+    Id: 4,
     Link: "https://smoda.elpais.com/wp-content/uploads/2020/01/embryolosse.jpg",
     Titulo: "Crema Rejuvencedora",
     Descuento: "16%",
@@ -88,12 +95,14 @@ var Main_Prod = [
     ConDescuento: "440",
     Lab: "Advil",
     Caracteristicas: [
-        "Eficaz",
-        "Acaba De manera Rapida EL Dolor de cabes",
-        "Nada Mejor",
-      ],
+      "Eficaz",
+      "Acaba De manera Rapida EL Dolor de cabes",
+      "Nada Mejor",
+    ],
+    Exist: 90,
   },
   {
+    Id: 5,
     Link: "https://phantom-telva.unidadeditorial.es/5a26bacf3ccb37f89adbe6a4efbb83c5/resize/640/assets/multimedia/imagenes/2021/01/19/16110571775940.jpg",
     Titulo: "Crema Para las manos",
     Descuento: "16%",
@@ -101,12 +110,14 @@ var Main_Prod = [
     ConDescuento: "440",
     Lab: "Advil",
     Caracteristicas: [
-        "Eficaz",
-        "Acaba De manera Rapida EL Dolor de cabes",
-        "Nada Mejor",
-      ],
+      "Eficaz",
+      "Acaba De manera Rapida EL Dolor de cabes",
+      "Nada Mejor",
+    ],
+    Exist: 90,
   },
   {
+    Id: 6,
     Link: "http://www.luminovapg.com/wp-content/uploads/2020/04/Dipronova.jpg",
     Titulo: "Inyeccion para el Nervio Ciatico",
     Descuento: "16%",
@@ -114,15 +125,17 @@ var Main_Prod = [
     ConDescuento: "440",
     Lab: "Advil",
     Caracteristicas: [
-        "Eficaz",
-        "Acaba De manera Rapida EL Dolor de cabes",
-        "Nada Mejor",
-      ],
+      "Eficaz",
+      "Acaba De manera Rapida EL Dolor de cabes",
+      "Nada Mejor",
+    ],
+    Exist: 90,
   },
 ];
 
 var AllProducts = [
   {
+    Id: 7,
     Link: "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/bp-advil/es_US/products/thumbnail_below_toute_032917.jpg?auto=format",
     Titulo: "Contra El dolor de cabeza",
     Descuento: "16%",
@@ -134,13 +147,16 @@ var AllProducts = [
       "Acaba De manera Rapida EL Dolor de cabes",
       "Nada Mejor",
     ],
+    Exist: 90,
     Variant: [
       "https://pbs.twimg.com/media/CdncLtQWwAIfY3Y.jpg",
       "https://medlineapp.com/wp-content/uploads/2021/10/Medicine-58.png",
       "https://i.ebayimg.com/images/g/kbMAAOSw2kZfI2Dy/s-l500.jpg",
     ],
+    Exist: 90,
   },
   {
+    Id: 8,
     Link: "https://www.gaceta.unam.mx/wp-content/uploads/2020/09/200907-aca1-des-f1-farmacos-con-base-en-organismos-marinos.jpg",
     Titulo: "Genericos Contra EL dolor",
     Descuento: "16%",
@@ -148,8 +164,10 @@ var AllProducts = [
     ConDescuento: "440",
     Lab: "Advil",
     Caracteristicas: ["Accesibles", "Importadas", "De excelente Calidad"],
+    Exist: 90,
   },
   {
+    Id: 9,
     Link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI65bE37s8AGn7Fglbpb5R8LUVkxMgfwnFdA&usqp=CAU",
     Titulo: "Desinflama y activa Tu Sistema",
     Descuento: "16%",
@@ -157,8 +175,10 @@ var AllProducts = [
     ConDescuento: "440",
     Lab: "Advil",
     Caracteristicas: ["Accion rapida", "Lo Mejor", "Intensivo"],
+    Exist: 90,
   },
   {
+    Id: 10,
     Link: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRuWD5aguDe8NYilE-z3SNHkPxc7FonI6u2A&usqp=CAU",
     Titulo: "EL Maletar Adios",
     Descuento: "16%",
@@ -166,6 +186,7 @@ var AllProducts = [
     ConDescuento: "440",
     Lab: "Advil",
     Caracteristicas: ["Dile adios Rapido", "Ya no Sufars", "Aun Esperas"],
+    Exist: 90,
   },
 ];
 (function ($) {
@@ -278,29 +299,275 @@ var AllProducts = [
     });
   }
 
-  function editProd() {
-    $("#editarProducto").on("click", function (e) {
-      e.preventDefault();
-      $("#price_prod").removeAttr("disabled");
-      $("#name_prod").removeAttr("disabled");
-      $("#categ_prod").removeAttr("disabled");
-      $("#image_prod").addClass("hide");
-      $("#id_image_prod").removeClass("hide");
+  function AddToListAdminPRoduts() {
+    Main_Prod.forEach((prod) => {
+      let template_prod = `<tr>
+
+            <td class="id_prod">${prod.Id}</td>
+
+            <td>
+                <h4> <span class="badge badge-success">${prod.Exist}</span></h4>
+            </td>
+
+            <td class="img-prod"style="width:50px!important;">
+                <img src="${prod.Link}"
+                    alt="" id="image_prod">
+                <input type="text" class="hide">
+            </td>
+
+            <td class="title_prod">
+            <input type="text" name=""  disabled
+                    placeholder="${prod.Titulo}"> </td>
+
+            <td class="carac_prod">
+            <input type="text" name=""  disabled
+                    placeholder="${prod.Caracteristicas}"></td>
+
+            <td class="price_prod"><input type="number" name=""  disabled="disabled"
+                    placeholder=" $ ${prod.Precio}"></td>
+            <td>
+                <div class="btn-group">
+
+                    <button type="button" 
+                        class="btn btn-warning rounded-circle mr-2 edit">
+
+                        <i class="fas fa-pencil-alt"></i>
+
+                    </button>
+
+                    <!-- <button type="button" class="btn btn-danger rounded-circle">
+
+                        <i class="fas fa-trash"></i>
+                    </button> -->
+
+                    <button type="button" class="btn btn-success rounded-circle save"
+                        >
+
+                        <i class="fas fa-save"></i>
+                    </button>
+
+                </div>
+
+            </td>
+
+        </tr>`;
+      $("#table_prod").append(template_prod);
     });
-    $("#save").on("click", function (e) {
+    AllProducts.forEach((prod) => {
+      let template_prod = `<tr>
+
+            <td class="id_prod">${prod.Id}</td>
+
+            <td>
+                <h4> <span class="badge badge-success">${prod.Exist}</span></h4>
+            </td>
+
+            <td style="width:50px!important;" class="img-prod">
+                <img src="${prod.Link}"
+                    alt="" class="show_prod">
+                <input type="text" class="hide link_prod">
+            </td>
+
+            <td class="title_prod">
+            <input type="text"   disabled
+                    placeholder="${prod.Titulo}"> </td>
+
+            <td class="carac_prod">
+            <input type="text" name=""  disabled
+                    placeholder="${prod.Caracteristicas}" class="carac_prod"></td>
+
+            <td class="price_prod"><input type="number" name=""  disabled
+                    placeholder=" $ ${prod.Precio}" ></td>
+            <td>
+                <div class="btn-group">
+
+                    <button type="button" 
+                        class="btn btn-warning rounded-circle mr-2 edit">
+
+                        <i class="fas fa-pencil-alt"></i>
+
+                    </button>
+
+                    <!-- <button type="button" class="btn btn-danger rounded-circle">
+
+                        <i class="fas fa-trash"></i>
+                    </button> -->
+
+                    <button type="button" class="btn btn-success rounded-circle save"
+                        >
+
+                        <i class="fas fa-save"></i>
+                    </button>
+
+                </div>
+
+            </td>
+
+        </tr>`;
+      $("#table_prod").append(template_prod);
+    });
+  }
+  function editProd() {
+    AddToListAdminPRoduts();
+    $(".edit").on("click", function (e) {
       e.preventDefault();
-      $("#price_prod").prop("disabled", true);
-      $("#name_prod").prop("disabled", true);
-      $("#categ_prod").prop("disabled", true);
-      $("#image_prod").removeClass("hide");
-      $("#id_image_prod").addClass("hide");
-      if ($("#id_image_prod").val() || $("#id_image_prod").val() != "") {
-        $("#image_prod").attr("src", $("#id_image_prod").val());
+      console.log(
+        $(this).parent().parent().parent().children(".id_prod").text()
+      );
+      $(this)
+        .parent()
+        .parent()
+        .parent()
+        .children(".img-prod")
+        .children("img")
+        .addClass("hide");
+      $(this)
+        .parent()
+        .parent()
+        .parent()
+        .children(".img-prod")
+        .children("input")
+        .removeClass("hide");
+      $(this)
+        .parent()
+        .parent()
+        .parent()
+        .children(".title_prod")
+        .children("input")
+        .removeAttr("disabled");
+      $(this)
+        .parent()
+        .parent()
+        .parent()
+        .children(".price_prod")
+        .children("input")
+        .removeAttr("disabled");
+      $(this)
+        .parent()
+        .parent()
+        .parent()
+        .children(".carac_prod")
+        .children("input")
+        .removeAttr("disabled");
+    });
+
+    $(".save").on("click", function async(e) {
+      e.preventDefault();
+      let LinkImage = $(this)
+        .parent()
+        .parent()
+        .parent()
+        .children(".img-prod")
+        .children("input")
+        .val();
+      let id_prod = $(this)
+        .parent()
+        .parent()
+        .parent()
+        .children(".id_prod")
+        .text();
+
+      let prodToChange = Main_Prod.findIndex((prod) => prod.Id === id_prod);
+      let precio = $(this)
+        .parent()
+        .parent()
+        .parent()
+        .children(".price_prod")
+        .children("input")
+        .val();
+
+      let titulo = $(this)
+        .parent()
+        .parent()
+        .parent()
+        .children(".title_prod")
+        .children("input")
+        .val()
+        .toString();
+      let Caracteristicas = $(this)
+        .parent()
+        .parent()
+        .parent()
+        .children(".carac_prod")
+        .children("input")
+        .val();
+      console.log(Main_Prod[prodToChange]);
+      if (Main_Prod[prodToChange] === undefined) {
+        AllProducts.forEach((pro) => {
+          console.log(pro.Id === Number(id_prod));
+          if (pro.Id == Number(id_prod)) {
+            let index = AllProducts.indexOf(pro);
+            AllProducts[index].Precio = precio;
+            AllProducts[index].Titulo = titulo;
+            AllProducts[index].Caracteristicas = Caracteristicas;
+            AllProducts[index].Link = LinkImage;
+            localStorage.setItem("AllProducts", JSON.stringify(AllProducts));
+          }
+        });
       }
+      Main_Prod.forEach((pro) => {
+        if (pro.Id == Number(id_prod)) {
+          console.log("se guardo");
+          let index = Main_Prod.indexOf(pro);
+          Main_Prod[index].Precio = precio;
+          Main_Prod[index].Titulo = titulo;
+          Main_Prod[index].Caracteristicas = Caracteristicas;
+          Main_Prod[index].Link = LinkImage;
+          localStorage.setItem("Main_Prod", JSON.stringify(Main_Prod));
+        }
+      });
+
+      // AllProducts=AllProducts.filter(prod=>prod.Id!=id_prod);
+      $(this)
+        .parent()
+        .parent()
+        .parent()
+        .children(".title_prod")
+        .children("input")
+        .prop("disabled", true);
+      $(this)
+        .parent()
+        .parent()
+        .parent()
+        .children(".price_prod")
+        .children("input")
+        .prop("disabled", true);
+      $(this)
+        .parent()
+        .parent()
+        .parent()
+        .children(".carac_prod")
+        .children("input")
+        .prop("disabled", true);
+      $(this)
+        .parent()
+        .parent()
+        .parent()
+        .children(".img-prod")
+        .children("img")
+        .removeClass("hide");
+      $(this)
+        .parent()
+        .parent()
+        .parent()
+        .children(".img-prod")
+        .children("img")
+        .attr("src", LinkImage);
+      $(this)
+        .parent()
+        .parent()
+        .parent()
+        .children(".img-prod")
+        .children("input")
+        .addClass("hide");
+      // if ($("#id_image_prod").val() || $("#id_image_prod").val() != "") {
+      //   $("#image_prod").attr("src", $("#id_image_prod").val());
+      // }
     });
 
     $("#out").on("click", function (e) {
-      $(".contenedorVistaProductos").removeClass("none");
+      e.preventDefault();
+      $(".contenedorVistaProductos").addClass("none");
     });
 
     $("#add_prod").on("click", function (e) {
@@ -316,7 +583,7 @@ var AllProducts = [
                 ).val()}</span></h4>
             </td>
 
-            <td>
+            <td style="width:50px!important;">
                 <img src="${$("#img_add").val()}"
                     alt="" id="image_prod">
                 <input type="text" id="id_image_prod" class="hide">
@@ -356,6 +623,7 @@ var AllProducts = [
             </td>
 
         </tr>`;
+      Main_Prod.forEach((prod) => {});
       $("#table_prod").append(template_prod);
       $(".contenedorVistaProductos").addClass("none");
     });
@@ -417,7 +685,6 @@ var AllProducts = [
       });
     }
   }
-
 
   function stickyHeader() {
     var header = $(".header"),
@@ -1046,6 +1313,22 @@ var AllProducts = [
     $(".ps-datepicker").datepicker();
   }
   function GetBanner_MainProducts() {
+    if (!localStorage.getItem("Banner_Principal")) {
+      localStorage.setItem(
+        "Banner_Principal",
+        JSON.stringify(Banner_Principal)
+      );
+    }
+    Banner_Principal = JSON.parse(localStorage.getItem("Banner_Principal"));
+    console.log(Banner_Principal);
+    if (!localStorage.getItem("Main_Prod")) {
+      localStorage.setItem("Main_Prod", JSON.stringify(Main_Prod));
+    }
+    Main_Prod = JSON.parse(localStorage.getItem("Main_Prod"));
+
+    // Banner_Principal.forEach(e=>console.log(e))
+    // console.log(Banner_Principal[1])
+
     Banner_Principal.forEach((banner) => {
       $(".ps-carousel--nav-inside ").append(`
         <div class="ps-banner--market-4" data-background="img/slider/horizontal/1.jpg">
@@ -1104,6 +1387,11 @@ var AllProducts = [
     });
   }
   function GetMainProductsInCategories_Mejoresmedicamentos(id) {
+    if (!localStorage.getItem("Main_Prod")) {
+      localStorage.setItem("Main_Prod", JSON.stringify(Main_Prod));
+    }
+    Main_Prod = JSON.parse(localStorage.getItem("Main_Prod"));
+
     Main_Prod.forEach((prod) => {
       $(id).append(
         `
@@ -1153,6 +1441,16 @@ var AllProducts = [
     });
   }
   function GetAllProducts() {
+    if (!localStorage.getItem("Main_Prod")) {
+      localStorage.setItem("Main_Prod", JSON.stringify(Main_Prod));
+    }
+    Main_Prod = JSON.parse(localStorage.getItem("Main_Prod"));
+
+    if (!localStorage.getItem("AllProducts")) {
+      localStorage.setItem("AllProducts", JSON.stringify(AllProducts));
+    }
+    AllProducts = JSON.parse(localStorage.getItem("AllProducts"));
+
     Main_Prod.forEach((prod) => {
       $("#AllProducts").append(
         `
@@ -1251,8 +1549,18 @@ var AllProducts = [
   }
   function SeeProd() {
     $(".ps-product").on("click", function (e) {
-        e.preventDefault();
-        let Producto = Main_Prod.find(
+      e.preventDefault();
+      let Producto = Main_Prod.find(
+        (prod) =>
+          prod.Link ===
+          $(this)
+            .children(".ps-product__thumbnail")
+            .children("a")
+            .children("img")
+            .attr("src")
+      );
+      if (Producto === undefined) {
+        Producto = AllProducts.find(
           (prod) =>
             prod.Link ===
             $(this)
@@ -1261,111 +1569,97 @@ var AllProducts = [
               .children("img")
               .attr("src")
         );
-        if (Producto === undefined) {
-          Producto = AllProducts.find(
-            (prod) =>
-              prod.Link ===
-              $(this)
-                .children(".ps-product__thumbnail")
-                .children("a")
-                .children("img")
-                .attr("src")
-          );
-        }
-  
-        $("#main-all").addClass("hide");
-        $("#product-specific").removeClass("hide");
-  
-        $(".ps-product__gallery").empty();
-        $(".ps-product__gallery").append(
-          `
+      }
+
+      $("#main-all").addClass("hide");
+      $("#product-specific").removeClass("hide");
+
+      $(".ps-product__gallery").empty();
+      $(".ps-product__gallery").append(
+        `
           <div class="item">
               <a>
                   <img src="${Producto.Link}" alt="">
               </a>
           </div>
           `
-        );
-        // Producto.Variant.forEach(img=>{
-        //   $(".ps-product__gallery").append(
-        //       `
-        //       <div class="item">
-        //           <a>
-        //               <img src="${img}" alt="">
-        //           </a>
-        //       </div>
-        //       `
-        //     );
-        // });
-  
-        $(".ps-product__variants").empty();
-  
-        // $(".ps-product__variants").append(
-        //   `
-        //   <div class="item">
-        //       <a>
-        //           <img src="${Producto.Link}" alt="">
-        //       </a>
-        //   </div>
-        //   `
-        // );
-  
-        // Producto.Variant.forEach(img=>{
-        //   $(".ps-product__variants").append(
-        //       `
-        //       <div class="item">
-        //           <a>
-        //               <img src="${img}" alt="">
-        //           </a>
-        //       </div>
-        //       `
-        //     );
-        // })
+      );
+      // Producto.Variant.forEach(img=>{
+      //   $(".ps-product__gallery").append(
+      //       `
+      //       <div class="item">
+      //           <a>
+      //               <img src="${img}" alt="">
+      //           </a>
+      //       </div>
+      //       `
+      //     );
+      // });
 
-        AddInformation(Producto);
-        AddToRecomended();
-        
-  
-      });
-  
-      $("#showAll").on("click", function (e) {
-        e.preventDefault();
-        $("#main-all").removeClass("hide");
-        $("#product-specific").addClass("hide");
-      });
+      $(".ps-product__variants").empty();
+
+      // $(".ps-product__variants").append(
+      //   `
+      //   <div class="item">
+      //       <a>
+      //           <img src="${Producto.Link}" alt="">
+      //       </a>
+      //   </div>
+      //   `
+      // );
+
+      // Producto.Variant.forEach(img=>{
+      //   $(".ps-product__variants").append(
+      //       `
+      //       <div class="item">
+      //           <a>
+      //               <img src="${img}" alt="">
+      //           </a>
+      //       </div>
+      //       `
+      //     );
+      // })
+
+      AddInformation(Producto);
+      AddToRecomended();
+    });
+
+    $("#showAll").on("click", function (e) {
+      e.preventDefault();
+      $("#main-all").removeClass("hide");
+      $("#product-specific").addClass("hide");
+    });
   }
 
-  function AddToRecomended(){
+  function AddToRecomended() {
     // GetMainProductsInCategories_Mejoresmedicamentos("#recommended12");
-    $('#product-specific').append($('#recommended1'))
+    $("#product-specific").append($("#BestItems"));
   }
 
-  function AddInformation(Producto){
-    $('.ps-product__info').empty()
-        let Titulo= `<h1>${Producto.Titulo}</h1>`;
-        let Precio= `
+  function AddInformation(Producto) {
+    $(".ps-product__info").empty();
+    let Titulo = `<h1>${Producto.Titulo}</h1>`;
+    let Precio = `
         <h4 class="ps-product__price sale">$<span>${Producto.ConDescuento}</span>
              <small> (-${Producto.Descuento})</small>
         </h4>
 
         <h4 class="ps-product__price">$<span>${Producto.Precio}</span></h4>
         `;
-        let Descripcion=
-        `
+    let Descripcion = `
         <div class="ps-product__desc">
 
         <p> Por:<a class="mr-20"><strong> Farmacia Santini</strong></a></p>
         <ul class="ps-list--dot">
-        `
-        if(Producto.Caracteristicas.length>0){
-            Producto.Caracteristicas.forEach(car=>{
-                Descripcion+=`<li>${car}</li>`;
-            })
-        }
-        
-        Descripcion+=`</ul></div>`;
-        let Shop=
-        `
+        `;
+    if (Producto.Caracteristicas.length > 0) {
+      Producto.Caracteristicas.forEach((car) => {
+        Descripcion += `<li>${car}</li>`;
+      });
+    }
+
+    Descripcion += `</ul></div>`;
+    let Shop = `
         <div class="ps-product__shopping">
 
             <figure>
@@ -1392,17 +1686,15 @@ var AllProducts = [
 
             <a class="ps-btn" href="checkout.html">Comprar ahora</a>
         </div>
-        `
-        
-        $('.ps-product__info').append(Titulo)
-        $('.ps-product__info').append(Precio)
-        $('.ps-product__info').append(Descripcion)
-        $('.ps-product__info').append(Shop)
+        `;
 
+    $(".ps-product__info").append(Titulo);
+    $(".ps-product__info").append(Precio);
+    $(".ps-product__info").append(Descripcion);
+    $(".ps-product__info").append(Shop);
   }
 
   $(function () {
-    
     GetAllProducts();
     GetMainProductsInCategories_Mejoresmedicamentos("#recommended1");
     GetBanner_MainProducts();
@@ -1892,7 +2184,6 @@ for (let y = 0; y < $categoriaMejoresContenedorMovil.length; y++) {
   });
 }
 
-
 function eventosCate(catego) {
   const $vistaElementos = document.querySelectorAll(
     `${catego} div:nth-of-type(2) a`
@@ -1987,193 +2278,229 @@ function eventosCate(catego) {
     });
   }
 
+  function menejarUsuarios() {
+    const d = document;
+    const usuario = "admin",
+      contraseñaUsuario = "admin",
+      entrar = false;
 
-function menejarUsuarios(){
-    const d=document;
-const usuario="admin", contraseñaUsuario="admin", entrar=false;
+    function mostrarUsuario(e) {
+      const btnEntrarLoginUno = d.querySelector(".btnLoginIndexUno");
+      const btnEntrarLoginDos = d.querySelector(".btnLoginLoginDos");
+      const btnRegisterindexDos = d.querySelector(".btnRegisterindexDos");
+      const btnRegisterindexUno = d.querySelector(".btnRegisterindexUno");
+      const btnFormSubmitLogin = d.querySelector(".btnFormSubmitLogin");
+      const btnFormSubmitRegister = d.querySelector(".btnFormSubmitRegister");
 
-function mostrarUsuario(e){    
-    const btnEntrarLoginUno=d.querySelector(".btnLoginIndexUno");
-    const btnEntrarLoginDos=d.querySelector(".btnLoginLoginDos");
-    const btnRegisterindexDos=d.querySelector(".btnRegisterindexDos");
-    const btnRegisterindexUno=d.querySelector(".btnRegisterindexUno");
-    const btnFormSubmitLogin=d.querySelector(".btnFormSubmitLogin");
-    const btnFormSubmitRegister=d.querySelector(".btnFormSubmitRegister");
+      //Este para modificar la interfaz desde administrador
 
-//Este para modificar la interfaz desde administrador
-
-if(e.target==btnFormSubmitLogin ){       
-    //Con esto se loguea                     
-    if(document.querySelector(".usuarioLogin").value=="admin" 
-    && document.querySelector(".passwordLogin").value=="admin"){
-        localStorage.setItem("logueado","trueadmin");
-        window.location.href="index.html";
-    }else if(localStorage.getItem("usuario")==document.querySelector(".usuarioLogin").value 
- && localStorage.getItem("contraseña")==document.querySelector(".passwordLogin").value){
-    alert("Se a Logueado");
-    localStorage.setItem("logueado","true");
-    window.location.href="index.html";
- } else{        
-    alert("Datos incorrectos");
-    localStorage.setItem("logueado","false");
- }
-  
-}
-
-if(e.target==btnFormSubmitRegister){
-    //Esto es para registrarme
-    localStorage.setItem("usuario",document.querySelector(".userName").value);
-    localStorage.setItem("contraseña",document.querySelector(".passwordRegister").value); 
-    localStorage.setItem("nombre",document.querySelector(".nombrePersona").value); 
-}
-
-}
- function cerrar(er){
-    //Esto es para cerrar sesion
-    document.querySelectorAll(".cerrarSesion")[0].addEventListener("click",(er)=>{
-        if(er.target==document.querySelectorAll(".cerrarSesion")[0] || er.target==document.querySelectorAll(".cerrarSesion")[1]){
-            
-            localStorage.setItem("logueado","false");
-            window.location.href="index.html";
+      if (e.target == btnFormSubmitLogin) {
+        //Con esto se loguea
+        if (
+          document.querySelector(".usuarioLogin").value == "admin" &&
+          document.querySelector(".passwordLogin").value == "admin"
+        ) {
+          localStorage.setItem("logueado", "trueadmin");
+          window.location.href = "index.html";
+        } else if (
+          localStorage.getItem("usuario") ==
+            document.querySelector(".usuarioLogin").value &&
+          localStorage.getItem("contraseña") ==
+            document.querySelector(".passwordLogin").value
+        ) {
+          alert("Se a Logueado");
+          localStorage.setItem("logueado", "true");
+          window.location.href = "index.html";
+        } else {
+          alert("Datos incorrectos");
+          localStorage.setItem("logueado", "false");
         }
-    })
-    document.querySelectorAll(".cerrarSesion")[1].addEventListener("click",(er)=>{
-        if(er.target==document.querySelectorAll(".cerrarSesion")[0] || er.target==document.querySelectorAll(".cerrarSesion")[1]){
-            
-            localStorage.setItem("logueado","false");
-            window.location.href="index.html";
-        }
-    })
- }
+      }
 
-d.addEventListener("click",async (e)=>{
-    //Aqui se manda a llamar el metodo cerrar
-    await mostrarUsuario(e);
-    cerrar(e);
-    if(e.target==d.querySelector(".iconCerrarCesionLogin")){
-        localStorage.setItem("logueado","false");
-        
-        window.location.href="index.html";
+      if (e.target == btnFormSubmitRegister) {
+        //Esto es para registrarme
+        localStorage.setItem(
+          "usuario",
+          document.querySelector(".userName").value
+        );
+        localStorage.setItem(
+          "contraseña",
+          document.querySelector(".passwordRegister").value
+        );
+        localStorage.setItem(
+          "nombre",
+          document.querySelector(".nombrePersona").value
+        );
+      }
     }
-    
-}
-)
-        
-    if(localStorage.getItem("logueado")=="trueadmin"){                  
-        
-        if(document.querySelector(".btnLoginIndexUno")){
-            //Aqui van las modificaciones para el documento index para usuario administrador
-            document.querySelector(".btnLoginIndexUno").textContent="Bienvenido administrador";
-            document.querySelector(".btnLoginLoginDos").textContent="Bienvenido administrador";
-            document.querySelector(".btnRegisterindexDos").style.display="none";
-            document.querySelector(".btnRegisterindexUno").style.display="none";
-            document.querySelectorAll(".cerrarSesion")[0].style.display="block";
-            document.querySelectorAll(".cerrarSesion")[1].style.display="block";
-            document.querySelectorAll(".ajustes")[0].style.display="block";
-            document.querySelectorAll(".ajustes")[1].style.display="block";
-            
-        }else if(document.querySelector(".btnLoginPageRegisterUno")){
-            //Aqui van las modificaciones para el documento login-register para usuario administrador
-            document.querySelector(".btnLoginPageRegisterUno").textContent="Bienvenido administrador";
-            document.querySelector(".btnLoginPageRegisterDos").textContent="Bienvenido administrador";
-            document.querySelector(".btnRegisterPageRegisterUno").style.display="none";
-            document.querySelector(".btnRegisterPageRegisterDos").style.display="none";
-        }else if(document.querySelector(".btnEntrarLoginSales")){
-            //Aqui van las modificaciones para el documento my-account_my-sales para usuario administrador
-            document.querySelectorAll(".btnEntrarLoginSales")[0].textContent="Bienbenido Administrador";
-            document.querySelectorAll(".btnEntrarLoginSales")[1].textContent="Bienbenido Administrador";
-        }else if(document.querySelector(".btnLoginCategori")){
-            //Aqui van las modificaciones para el documento categori para usuario administrador
-            document.querySelectorAll(".btnLoginCategori")[0].textContent="Bienvenido Administrador";
-            document.querySelectorAll(".btnLoginCategori")[1].textContent="Bienvenido Administrador";   
-            document.querySelectorAll(".btnRegistercateforiDos")[0].style.display="none";
-            document.querySelectorAll(".btnRegistercateforiDos")[1].style.display="none";
-        }
-
-    }else if(localStorage.getItem("logueado")=="true"){
-        
-        if(document.querySelector(".btnLoginIndexUno")){
-            //Aqui van las modificaciones para el documento index para usuario comun
-            document.querySelector(".btnLoginIndexUno").textContent="Bienvenido "+localStorage.getItem("nombre");
-            document.querySelector(".btnLoginLoginDos").textContent="Bienvenido "+localStorage.getItem("nombre");
-            document.querySelector(".btnRegisterindexDos").style.display="none";
-            document.querySelector(".btnRegisterindexUno").style.display="none";
-            document.querySelectorAll(".cerrarSesion")[0].style.display="block";
-            document.querySelectorAll(".cerrarSesion")[1].style.display="block";
-            document.querySelector(".ajustes").style.display="none";
-        }else if(document.querySelector(".btnLoginPageRegisterUno")){
-            //Aqui van las modificaciones para el documento login-register para usuario comun
-            document.querySelector(".btnLoginPageRegisterUno").textContent="Bienvenido "+localStorage.getItem("nombre");
-            document.querySelector(".btnLoginPageRegisterDos").textContent="Bienvenido "+localStorage.getItem("nombre");
-            document.querySelector(".btnRegisterPageRegisterUno").style.display="none";
-            document.querySelector(".btnRegisterPageRegisterDos").style.display="none";
-            document.querySelector(".cerrarSesion").style.display="block";
-            document.querySelector(".ajustes").style.display="none";
-        }else if(document.querySelector(".btnLoginCategori")){
-            //Aqui van las modificaciones para el documento categori para usuario comun
-            document.querySelectorAll(".btnLoginCategori")[0].textContent="Bienvenido "+localStorage.getItem("nombre");
-            document.querySelectorAll(".btnLoginCategori")[1].textContent="Bienvenido "+localStorage.getItem("nombre");
-            document.querySelectorAll(".btnRegistercateforiDos")[0].style.display="none";
-            document.querySelectorAll(".btnRegistercateforiDos")[1].style.display="none";
-            document.querySelectorAll(".cerrarSesion")[0].style.display="block";
-            document.querySelectorAll(".cerrarSesion")[1].style.display="block";
-            document.querySelectorAll(".ajustes")[0].style.display="none";
-            document.querySelectorAll(".ajustes")[1].style.display="none";
-        }
-
-    }else{
-        //Aqui van las modificaciones para el documento index para ninguno de los usuarios
-        document.querySelectorAll(".cerrarSesion")[0].style.display="none";
-        document.querySelectorAll(".cerrarSesion")[1].style.display="none";
-        if(document.querySelector(".ajustes")){
-            document.querySelector(".ajustes").style.display="none";
-        }
+    function cerrar(er) {
+      //Esto es para cerrar sesion
+      document
+        .querySelectorAll(".cerrarSesion")[0]
+        .addEventListener("click", (er) => {
+          if (
+            er.target == document.querySelectorAll(".cerrarSesion")[0] ||
+            er.target == document.querySelectorAll(".cerrarSesion")[1]
+          ) {
+            localStorage.setItem("logueado", "false");
+            window.location.href = "index.html";
+          }
+        });
+      document
+        .querySelectorAll(".cerrarSesion")[1]
+        .addEventListener("click", (er) => {
+          if (
+            er.target == document.querySelectorAll(".cerrarSesion")[0] ||
+            er.target == document.querySelectorAll(".cerrarSesion")[1]
+          ) {
+            localStorage.setItem("logueado", "false");
+            window.location.href = "index.html";
+          }
+        });
     }
-  
-}
-menejarUsuarios();
-function eventosCateDos(catego) {
-  const $vistaElementos = document.querySelectorAll(
-    `${catego} div:nth-of-type(2) div:nth-of-type(2) a`
-  );
-  console.log($vistaElementos);
-  const $galeria = document.querySelector(
-    `.ps-wrapper div div:nth-of-type(1) a img`
-  );
-  const $vistaElementosImagenes = document.querySelectorAll(
-    `${catego} div a img:nth-of-type(1)`
-  );
-  for (let y = 0; y < $vistaElementos.length; y++) {
-    $vistaElementos[y].addEventListener("click", (e) => {
-      $galeria.setAttribute(
-        "src",
-        $vistaElementosImagenes[y - 2].getAttribute("src")
-      );
-      document
-        .querySelector(".ps-wrapper div div:nth-of-type(2) a img")
-        .setAttribute("src", $vistaElementosImagenes[y].getAttribute("src"));
-      document
-        .querySelector(".ps-product__variants div:nth-of-type(1) img")
-        .setAttribute("src", $vistaElementosImagenes[y].getAttribute("src"));
-      document
-        .querySelector(".ps-product__variants div:nth-of-type(2) img")
-        .setAttribute("src", $vistaElementosImagenes[y].getAttribute("src"));
-      document.querySelector("h1").textContent = document.querySelectorAll(
-        `${catego} div:nth-of-type(2) div:nth-of-type(1) a`
-      )[y].textContent;
 
-      document.querySelectorAll("h4 span")[0].textContent =
-        document.querySelectorAll(
-          `${catego} div:nth-of-type(2) div:nth-of-type(1) p span`
-        )[y].textContent;
-      document.querySelectorAll("h4 span")[1].textContent =
-        document.querySelectorAll(
-          `${catego} div:nth-of-type(2) div:nth-of-type(1) p span`
-        )[y].textContent;
+    d.addEventListener("click", async (e) => {
+      //Aqui se manda a llamar el metodo cerrar
+      await mostrarUsuario(e);
+      cerrar(e);
+      if (e.target == d.querySelector(".iconCerrarCesionLogin")) {
+        localStorage.setItem("logueado", "false");
+
+        window.location.href = "index.html";
+      }
     });
+
+    if (localStorage.getItem("logueado") == "trueadmin") {
+      if (document.querySelector(".btnLoginIndexUno")) {
+        //Aqui van las modificaciones para el documento index para usuario administrador
+        document.querySelector(".btnLoginIndexUno").textContent =
+          "Bienvenido administrador";
+        document.querySelector(".btnLoginLoginDos").textContent =
+          "Bienvenido administrador";
+        document.querySelector(".btnRegisterindexDos").style.display = "none";
+        document.querySelector(".btnRegisterindexUno").style.display = "none";
+        document.querySelectorAll(".cerrarSesion")[0].style.display = "block";
+        document.querySelectorAll(".cerrarSesion")[1].style.display = "block";
+        document.querySelectorAll(".ajustes")[0].style.display = "block";
+        document.querySelectorAll(".ajustes")[1].style.display = "block";
+      } else if (document.querySelector(".btnLoginPageRegisterUno")) {
+        //Aqui van las modificaciones para el documento login-register para usuario administrador
+        document.querySelector(".btnLoginPageRegisterUno").textContent =
+          "Bienvenido administrador";
+        document.querySelector(".btnLoginPageRegisterDos").textContent =
+          "Bienvenido administrador";
+        document.querySelector(".btnRegisterPageRegisterUno").style.display =
+          "none";
+        document.querySelector(".btnRegisterPageRegisterDos").style.display =
+          "none";
+      } else if (document.querySelector(".btnEntrarLoginSales")) {
+        //Aqui van las modificaciones para el documento my-account_my-sales para usuario administrador
+        document.querySelectorAll(".btnEntrarLoginSales")[0].textContent =
+          "Bienbenido Administrador";
+        document.querySelectorAll(".btnEntrarLoginSales")[1].textContent =
+          "Bienbenido Administrador";
+      } else if (document.querySelector(".btnLoginCategori")) {
+        //Aqui van las modificaciones para el documento categori para usuario administrador
+        document.querySelectorAll(".btnLoginCategori")[0].textContent =
+          "Bienvenido Administrador";
+        document.querySelectorAll(".btnLoginCategori")[1].textContent =
+          "Bienvenido Administrador";
+        document.querySelectorAll(".btnRegistercateforiDos")[0].style.display =
+          "none";
+        document.querySelectorAll(".btnRegistercateforiDos")[1].style.display =
+          "none";
+      }
+    } else if (localStorage.getItem("logueado") == "true") {
+      if (document.querySelector(".btnLoginIndexUno")) {
+        //Aqui van las modificaciones para el documento index para usuario comun
+        document.querySelector(".btnLoginIndexUno").textContent =
+          "Bienvenido " + localStorage.getItem("nombre");
+        document.querySelector(".btnLoginLoginDos").textContent =
+          "Bienvenido " + localStorage.getItem("nombre");
+        document.querySelector(".btnRegisterindexDos").style.display = "none";
+        document.querySelector(".btnRegisterindexUno").style.display = "none";
+        document.querySelectorAll(".cerrarSesion")[0].style.display = "block";
+        document.querySelectorAll(".cerrarSesion")[1].style.display = "block";
+        document.querySelector(".ajustes").style.display = "none";
+      } else if (document.querySelector(".btnLoginPageRegisterUno")) {
+        //Aqui van las modificaciones para el documento login-register para usuario comun
+        document.querySelector(".btnLoginPageRegisterUno").textContent =
+          "Bienvenido " + localStorage.getItem("nombre");
+        document.querySelector(".btnLoginPageRegisterDos").textContent =
+          "Bienvenido " + localStorage.getItem("nombre");
+        document.querySelector(".btnRegisterPageRegisterUno").style.display =
+          "none";
+        document.querySelector(".btnRegisterPageRegisterDos").style.display =
+          "none";
+        document.querySelector(".cerrarSesion").style.display = "block";
+        document.querySelector(".ajustes").style.display = "none";
+      } else if (document.querySelector(".btnLoginCategori")) {
+        //Aqui van las modificaciones para el documento categori para usuario comun
+        document.querySelectorAll(".btnLoginCategori")[0].textContent =
+          "Bienvenido " + localStorage.getItem("nombre");
+        document.querySelectorAll(".btnLoginCategori")[1].textContent =
+          "Bienvenido " + localStorage.getItem("nombre");
+        document.querySelectorAll(".btnRegistercateforiDos")[0].style.display =
+          "none";
+        document.querySelectorAll(".btnRegistercateforiDos")[1].style.display =
+          "none";
+        document.querySelectorAll(".cerrarSesion")[0].style.display = "block";
+        document.querySelectorAll(".cerrarSesion")[1].style.display = "block";
+        document.querySelectorAll(".ajustes")[0].style.display = "none";
+        document.querySelectorAll(".ajustes")[1].style.display = "none";
+      }
+    } else {
+      //Aqui van las modificaciones para el documento index para ninguno de los usuarios
+      document.querySelectorAll(".cerrarSesion")[0].style.display = "none";
+      document.querySelectorAll(".cerrarSesion")[1].style.display = "none";
+      if (document.querySelector(".ajustes")) {
+        document.querySelector(".ajustes").style.display = "none";
+      }
+    }
+  }
+  menejarUsuarios();
+  function eventosCateDos(catego) {
+    const $vistaElementos = document.querySelectorAll(
+      `${catego} div:nth-of-type(2) div:nth-of-type(2) a`
+    );
+    console.log($vistaElementos);
+    const $galeria = document.querySelector(
+      `.ps-wrapper div div:nth-of-type(1) a img`
+    );
+    const $vistaElementosImagenes = document.querySelectorAll(
+      `${catego} div a img:nth-of-type(1)`
+    );
+    for (let y = 0; y < $vistaElementos.length; y++) {
+      $vistaElementos[y].addEventListener("click", (e) => {
+        $galeria.setAttribute(
+          "src",
+          $vistaElementosImagenes[y - 2].getAttribute("src")
+        );
+        document
+          .querySelector(".ps-wrapper div div:nth-of-type(2) a img")
+          .setAttribute("src", $vistaElementosImagenes[y].getAttribute("src"));
+        document
+          .querySelector(".ps-product__variants div:nth-of-type(1) img")
+          .setAttribute("src", $vistaElementosImagenes[y].getAttribute("src"));
+        document
+          .querySelector(".ps-product__variants div:nth-of-type(2) img")
+          .setAttribute("src", $vistaElementosImagenes[y].getAttribute("src"));
+        document.querySelector("h1").textContent = document.querySelectorAll(
+          `${catego} div:nth-of-type(2) div:nth-of-type(1) a`
+        )[y].textContent;
+
+        document.querySelectorAll("h4 span")[0].textContent =
+          document.querySelectorAll(
+            `${catego} div:nth-of-type(2) div:nth-of-type(1) p span`
+          )[y].textContent;
+        document.querySelectorAll("h4 span")[1].textContent =
+          document.querySelectorAll(
+            `${catego} div:nth-of-type(2) div:nth-of-type(1) p span`
+          )[y].textContent;
+      });
+    }
   }
 }
-}
- eventosCate(".categoriaMejor");
+eventosCate(".categoriaMejor");
 eventosCateDos(".categoriaRecomendado");
 eventosCate(".medicamentoCateExistente");
